@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1002</width>
+    <height>543</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Signal Generator Controller</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(11, 45, 1);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(11, 45, 1);\ncolor: rgb(255, 255, 255);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_13">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_28">
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="styleSheet">
+            <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+           </property>
+           <property name="text">
+            <string>Open</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_close">
+           <property name="styleSheet">
+            <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+           </property>
+           <property name="text">
+            <string>Close</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_clear">
+           <property name="styleSheet">
+            <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+           </property>
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QComboBox" name="comboBox_devicename">
+             <property name="styleSheet">
+              <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>/dev/ttyS1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>/dev/ttyS0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>/dev/ttyUSB0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>/dev/ttyUSB1</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_baudrate">
+             <property name="styleSheet">
+              <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>9600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>57600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>115200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>38400</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="minimumSize">
+          <size>
+           <width>350</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(11, 45, 1);\ncolor: rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Settings</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Cold Start</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Warm Start</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <item>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Factory Reset</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_6">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+min-width: 80px;</string>
+               </property>
+               <property name="text">
+                <string>Hot Start</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <widget class="QPushButton" name="pushButton_20">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Query Firmware</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_21">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_27">
+             <item>
+              <widget class="QPushButton" name="pushButton_19">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Set Baud 9600</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_9">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Set Baud 57600</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_19">
+             <item>
+              <widget class="QPushButton" name="pushButton_22">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Set Baud 38400</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_12">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+               </property>
+               <property name="text">
+                <string>Set Baud 115200</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(11, 45, 1);
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="title">
+              <string>NMEA Settings</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_18">
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="text">
+                   <string>NMEA Rate</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_3">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(15, 15, 15);</string>
+                  </property>
+                  <property name="currentIndex">
+                   <number>2</number>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>100 mHz</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>200 mHz</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>1 Hz</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 Hz</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QPushButton" name="pushButton_10">
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+                  </property>
+                  <property name="text">
+                   <string>All NMEA</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+                  </property>
+                  <property name="text">
+                   <string>NMEA Off</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <widget class="QPushButton" name="pushButton_8">
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+                  </property>
+                  <property name="text">
+                   <string>RMC Only</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_11">
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 2px;
+min-width: 60px;</string>
+                  </property>
+                  <property name="text">
+                   <string>RMC + GPA</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>Locus</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QPushButton" name="pushButton_16">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+min-width: 80px;</string>
+               </property>
+               <property name="text">
+                <string>Locus Stop</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_15">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+min-width: 80px;</string>
+               </property>
+               <property name="text">
+                <string>Locus Start</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QPushButton" name="pushButton_14">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+min-width: 80px;</string>
+               </property>
+               <property name="text">
+                <string>Locus Query</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_13">
+               <property name="styleSheet">
+                <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+min-width: 80px;</string>
+               </property>
+               <property name="text">
+                <string>Erase Flash</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_18">
+             <property name="styleSheet">
+              <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+min-width: 80px;</string>
+             </property>
+             <property name="text">
+              <string>Parse</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Logging Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_2">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(15, 15, 15);</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>100 mHz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>200 mHz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>5Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Download Data</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Download Locus Data</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_25">
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Save file name : </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_filename">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(9, 9, 9);</string>
+               </property>
+               <property name="text">
+                <string>Data.txt</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_24">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_13">
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Progess: </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_14">
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Used Space: </string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <widget class="QProgressBar" name="progressBar">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(9, 9, 9);</string>
+                 </property>
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QProgressBar" name="progressBar_used">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(9, 9, 9);</string>
+                 </property>
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="styleSheet">
+              <string notr="true">font: 75 12pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(255, 255, 255);
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+min-width: 80px;</string>
+             </property>
+             <property name="text">
+              <string>Download Now</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_status">
+       <attribute name="title">
+        <string>Status</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100000</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="minimumSize">
+             <size>
+              <width>600</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>125</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="title">
+             <string>Status</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_26">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="label">
+                     <property name="font">
+                      <font>
+                       <family>Sans Serif</family>
+                       <pointsize>12</pointsize>
+                       <weight>50</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string>Time:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_value_time">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string>4:15:14</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <item>
+                    <widget class="QLabel" name="label_2">
+                     <property name="font">
+                      <font>
+                       <family>Sans Serif</family>
+                       <pointsize>12</pointsize>
+                       <weight>50</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string>Date:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_date">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string>1/1/1992</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Firmware</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_firmware">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>0.0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Model:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_model">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Interval</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_interval">
+                   <property name="text">
+                    <string>1 (s)</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_9">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Logging</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_locus_logging">
+                   <property name="text">
+                    <string>Disabled</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Mode     </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_mode">
+                   <property name="text">
+                    <string>Overlap</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_22">
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Percent Used:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_percent">
+                   <property name="text">
+                    <string>0.0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Latitude: </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_lat">
+                   <property name="text">
+                    <string>0.0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Longitude:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_long">
+                   <property name="text">
+                    <string>0.0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_23">
+                 <item>
+                  <widget class="QLabel" name="label_17">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Sans Serif&quot;;
+color: rgb(49, 229, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Number Logs</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_logs">
+                   <property name="text">
+                    <string>0.0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_map">
+       <attribute name="title">
+        <string>Map</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+   <property name="toolTip">
+    <string>About program</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="terminal.qrc">
+     <normaloff>:/images/connect.png</normaloff>:/images/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;onnect</string>
+   </property>
+   <property name="toolTip">
+    <string>Connect to serial port</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="icon">
+    <iconset resource="terminal.qrc">
+     <normaloff>:/images/disconnect.png</normaloff>:/images/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Disconnect</string>
+   </property>
+   <property name="toolTip">
+    <string>Disconnect from serial port</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionConfigure">
+   <property name="icon">
+    <iconset resource="terminal.qrc">
+     <normaloff>:/images/settings.png</normaloff>:/images/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Configure</string>
+   </property>
+   <property name="toolTip">
+    <string>Configure serial port</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="terminal.qrc">
+     <normaloff>:/images/clear.png</normaloff>:/images/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;lear</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear data</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+L</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="terminal.qrc">
+     <normaloff>:/images/application-exit.png</normaloff>:/images/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="terminal.qrc"/>
+ </resources>
+ <connections/>
+</ui>

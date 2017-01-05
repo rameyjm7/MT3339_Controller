@@ -1,0 +1,158 @@
+#include "nmea_parser.h"
+#include "QDebug"
+#include "cstdio"
+nmea_parser::nmea_parser()
+{
+
+}
+
+nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
+{
+
+    QStringList csvdata = QString(serial_data.data()).split(",");
+    QString identifier = csvdata.at(0);
+    //    qDebug() << csvdata.count();
+
+    /*    if(!strcmp("$GPGGA",toCharP(identifier)))
+    {
+        dat.time_raw_utc = QString(csvdata.at(1)).toFloat();
+        QString temp = csvdata.at(1);
+        int foo = dat.time_raw_utc;
+        if(foo>100) foo = foo-100*floor((int) foo/100);
+
+//        qDebug() << "SS " << foo;
+        dat.time_seconds_utc = foo;
+        int foo1 = dat.time_raw_utc/100;
+        if(foo1>100) foo1 = foo1-100*floor((int) foo1/100);
+//        qDebug() << "MM " << foo1;
+        dat.time_minutes_utc = foo1;
+        int foo2 = dat.time_raw_utc/10000;
+//        qDebug() << "HH " << foo2;
+        dat.time_hours_utc = foo2;
+
+//        dat.latitude = QString(csvdata.at(2)).toFloat();
+//        if(!strcmp(toCharP(QString(csvdata.at(3))),"N")) dat.lat_NS = 0;
+//        else dat.lat_NS = 1; // S
+//        dat.longitude = QString(csvdata.at(4)).toFloat();
+//        if(!strcmp(toCharP(QString(csvdata.at(5))),"W")) dat.long_WE = 0;
+//        else dat.long_WE = 1; // E
+//        dat.fix_quality = QString(csvdata.at(6)).toInt();
+//        dat.num_satelites = QString(csvdata.at(7)).toInt();
+//        dat.hdop = QString(csvdata.at(8)).toFloat();
+//        dat.altitude = QString(csvdata.at(9)).toFloat();
+//        dat.fix_quality = QString(csvdata.at(6)).toInt();
+        return dat;
+    }
+    else*/ if(!strcmp("$GPRMC",toCharP(identifier)))
+    {
+
+        dat.time_raw_utc = QString(csvdata.at(1)).toFloat();
+        dat.latitude = QString(csvdata.at(3)).toFloat();
+
+        if(!strcmp(toCharP(QString(csvdata.at(4))),"N")) dat.lat_NS = 0;
+        else dat.lat_NS = 1; // S
+        //        qDebug() << "Latitude " << dat.latitude << (dat.lat_NS == 0 ? " N" : " S");
+        dat.longitude = QString(csvdata.at(5)).toFloat();
+
+
+        //        if(!strcmp(toCharP(QString(csvdata.at(6))),"W")) dat.long_WE = 0;
+        //        else dat.long_WE = 1; // E
+        //        qDebug() << "Longitude " << dat.longitude << (dat.long_WE == 0 ? " W" : " E");
+        //        if(max > 6) dat.date_raw = QString(csvdata.at(6)).toInt();
+        //        else qDebug() << "Size of GPRMC is " << max;
+        //        qDebug() << QString(csvdata.at(5));
+
+        int foo = dat.time_raw_utc;
+        if(foo>100) foo = foo-100*floor((int) foo/100);
+        dat.time_seconds_utc = foo;
+        int foo1 = dat.time_raw_utc/100;
+        if(foo1>100) foo1 = foo1-100*floor((int) foo1/100);
+        dat.time_minutes_utc = foo1;
+        int foo2 = dat.time_raw_utc/10000;
+        dat.time_hours_utc = foo2;
+        QString time;
+
+        dat.time_hours_utc = dat.time_hours_utc-5;
+        if(dat.time_hours_utc<0) dat.time_hours_utc+=12;
+
+        QString hours = QString("%1").arg(dat.time_hours_utc,2);
+        QString mins = QString("%1").arg(dat.time_minutes_utc,2);
+        QString secs = QString("%1").arg(dat.time_seconds_utc,2);
+
+        time.append(hours); time.append(":");
+        time.append(mins); time.append(":");
+        time.append(secs);
+        time_formatted = time;
+
+
+        dat.date_raw = QString(csvdata.at(csvdata.count()-2)).toFloat();
+
+        QByteArray ba; ba.append(dat.date_raw);
+        char* buff;
+        buff = ba.data();
+        QString temp = QString::number(dat.date_raw/(10000));
+        temp = QString::number(temp.toInt()*100);
+
+        int a = (dat.date_raw/100);
+        a = a*100;
+        dat.date_year =  dat.date_raw -a;
+        dat.date_day = (int) dat.date_raw/10000;
+        a = (dat.date_raw/100);
+        dat.date_month = a;
+        a = a/100;
+        dat.date_month = dat.date_month - a*100;
+
+
+        QString date;
+        date.append(QString::number(dat.date_month)); date.append("/");
+        date.append(QString::number(dat.date_day)); date.append("/");
+        date.append(QString::number(dat.date_year));
+        date_formatted  = date;
+
+
+
+
+
+        return dat;
+
+    }
+    else if(!strcmp("$PMTKLOG",toCharP(identifier)))
+    {
+        qDebug() << " PMTKLOG ";
+        //        $PMTKLOG, Serial#, Type, Mode, Content, Interval, Distance, Speed, Status, Number,
+        locus.serial_no = QString(csvdata.at(1)).toInt();
+        locus.type = QString(csvdata.at(2)).toInt();
+        locus.mode = QString(csvdata.at(3)).toInt();
+        locus.content = QString(csvdata.at(4)).toInt();
+        locus.interval = QString(csvdata.at(5)).toInt();
+        locus.distance = QString(csvdata.at(6)).toInt();
+        locus.speed = QString(csvdata.at(7)).toInt();
+        locus.status = QString(csvdata.at(8)).toInt();
+        qDebug() << QString(csvdata.at(9));
+
+        qDebug() << "serial number     : " << locus.serial_no;
+        qDebug() << "logging type      : " << (locus.type == 0 ? "Overlap" : "Full stop");
+        qDebug() << "mode              : " << locus.mode; //
+        qDebug() << "content           : " << locus.content;
+        qDebug() << "logging interval  : " << locus.interval << " seconds"; // logging interval in seconds
+        qDebug() << "distance          : " << locus.distance;
+        qDebug() << "speed             : " << locus.speed;
+        qDebug() << "logging status    : " << (locus.status == 0 ? "Logging" : "Not logging");
+        qDebug() << "number of logs    : " << locus.number;  // number of logs
+        qDebug() << "percent used      : " << locus.percent; // percent used space
+
+
+    }
+    else if(!strcmp("$PMTK705",toCharP(identifier)))
+    {
+        qDebug() << " PMTK705 - Query Firmware Version ";
+        firmware_version = QString(QString(csvdata.at(1)).split("_").at(1));
+        model_number = QString(QString(csvdata.at(1)).split("_").at(2)).toInt();
+
+        qDebug() << "firmware version  : " << firmware_version;
+        qDebug() << "model number      : " << model_number;
+
+
+
+    }
+}

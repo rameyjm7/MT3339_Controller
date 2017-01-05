@@ -1,0 +1,3286 @@
+<?xml version="1.0"?>
+<dataset2 xmlns="xsdbooks">
+  <Count Data="1">
+    <UTC>2017-01-03,00:01:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541267</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="2">
+    <UTC>2017-01-03,00:01:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541348</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="3">
+    <UTC>2017-01-03,00:02:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541317</Lat>
+    <Lon>-77.524719</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="4">
+    <UTC>2017-01-03,00:02:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541328</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="5">
+    <UTC>2017-01-03,00:02:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541317</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="6">
+    <UTC>2017-01-03,00:02:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541409</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="7">
+    <UTC>2017-01-03,00:03:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541374</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="8">
+    <UTC>2017-01-03,00:03:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541271</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="9">
+    <UTC>2017-01-03,00:03:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541023</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>70</HGT>
+  </Count>
+  <Count Data="10">
+    <UTC>2017-01-03,00:03:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541092</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="11">
+    <UTC>2017-01-03,00:04:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541199</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="12">
+    <UTC>2017-01-03,00:04:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541183</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="13">
+    <UTC>2017-01-03,00:04:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541252</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="14">
+    <UTC>2017-01-03,00:04:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541283</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="15">
+    <UTC>2017-01-03,00:05:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54134</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="16">
+    <UTC>2017-01-03,00:05:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541359</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="17">
+    <UTC>2017-01-03,00:05:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541393</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="18">
+    <UTC>2017-01-03,00:05:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541355</Lat>
+    <Lon>-77.524643</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="19">
+    <UTC>2017-01-03,00:06:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541328</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="20">
+    <UTC>2017-01-03,00:06:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541378</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="21">
+    <UTC>2017-01-03,00:06:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541348</Lat>
+    <Lon>-77.524635</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="22">
+    <UTC>2017-01-03,00:06:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541161</Lat>
+    <Lon>-77.524628</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="23">
+    <UTC>2017-01-03,00:07:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541283</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="24">
+    <UTC>2017-01-03,00:07:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541359</Lat>
+    <Lon>-77.524841</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="25">
+    <UTC>2017-01-03,00:07:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="26">
+    <UTC>2017-01-03,00:07:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541237</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="27">
+    <UTC>2017-01-03,00:08:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541229</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="28">
+    <UTC>2017-01-03,00:08:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541172</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="29">
+    <UTC>2017-01-03,00:08:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541042</Lat>
+    <Lon>-77.524544</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="30">
+    <UTC>2017-01-03,00:08:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541279</Lat>
+    <Lon>-77.524719</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="31">
+    <UTC>2017-01-03,00:09:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541359</Lat>
+    <Lon>-77.524811</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="32">
+    <UTC>2017-01-03,00:09:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541328</Lat>
+    <Lon>-77.524841</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="33">
+    <UTC>2017-01-03,00:09:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541328</Lat>
+    <Lon>-77.524849</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="34">
+    <UTC>2017-01-03,00:09:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541286</Lat>
+    <Lon>-77.524826</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="35">
+    <UTC>2017-01-03,00:10:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541267</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="36">
+    <UTC>2017-01-03,00:10:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541294</Lat>
+    <Lon>-77.524628</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="37">
+    <UTC>2017-01-03,00:10:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.524628</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="38">
+    <UTC>2017-01-03,00:10:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="39">
+    <UTC>2017-01-03,00:11:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541252</Lat>
+    <Lon>-77.524811</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="40">
+    <UTC>2017-01-03,00:11:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541248</Lat>
+    <Lon>-77.524879</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="41">
+    <UTC>2017-01-03,00:11:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541256</Lat>
+    <Lon>-77.524902</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="42">
+    <UTC>2017-01-03,00:11:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541279</Lat>
+    <Lon>-77.524849</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="43">
+    <UTC>2017-01-03,00:12:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541271</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="44">
+    <UTC>2017-01-03,00:12:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541271</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="45">
+    <UTC>2017-01-03,00:12:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541306</Lat>
+    <Lon>-77.524719</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="46">
+    <UTC>2017-01-03,00:12:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541336</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="47">
+    <UTC>2017-01-03,00:13:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541313</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>70</HGT>
+  </Count>
+  <Count Data="48">
+    <UTC>2017-01-03,00:13:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541275</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>70</HGT>
+  </Count>
+  <Count Data="49">
+    <UTC>2017-01-03,00:13:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541237</Lat>
+    <Lon>-77.524719</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="50">
+    <UTC>2017-01-03,00:13:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.524811</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="51">
+    <UTC>2017-01-03,00:14:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541286</Lat>
+    <Lon>-77.524879</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="52">
+    <UTC>2017-01-03,00:14:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541279</Lat>
+    <Lon>-77.524849</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="53">
+    <UTC>2017-01-03,00:14:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541252</Lat>
+    <Lon>-77.524826</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="54">
+    <UTC>2017-01-03,00:14:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541225</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="55">
+    <UTC>2017-01-03,00:15:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541164</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="56">
+    <UTC>2017-01-03,00:15:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541222</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="57">
+    <UTC>2017-01-03,00:15:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541183</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="58">
+    <UTC>2017-01-03,00:15:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541336</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="59">
+    <UTC>2017-01-03,00:16:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541439</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="60">
+    <UTC>2017-01-03,00:16:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541416</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="61">
+    <UTC>2017-01-03,00:16:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541363</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="62">
+    <UTC>2017-01-03,00:16:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541599</Lat>
+    <Lon>-77.52494</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="63">
+    <UTC>2017-01-03,00:17:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541965</Lat>
+    <Lon>-77.525314</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="64">
+    <UTC>2017-01-03,00:17:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541523</Lat>
+    <Lon>-77.524994</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="65">
+    <UTC>2017-01-03,00:17:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541527</Lat>
+    <Lon>-77.525024</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="66">
+    <UTC>2017-01-03,00:17:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541489</Lat>
+    <Lon>-77.524971</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="67">
+    <UTC>2017-01-03,00:18:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541416</Lat>
+    <Lon>-77.524971</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="68">
+    <UTC>2017-01-03,00:18:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541397</Lat>
+    <Lon>-77.524963</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="69">
+    <UTC>2017-01-03,00:18:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541393</Lat>
+    <Lon>-77.524986</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="70">
+    <UTC>2017-01-03,00:18:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541203</Lat>
+    <Lon>-77.524841</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="71">
+    <UTC>2017-01-03,00:19:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541077</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="72">
+    <UTC>2017-01-03,00:19:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541111</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>63</HGT>
+  </Count>
+  <Count Data="73">
+    <UTC>2017-01-03,00:19:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541214</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>63</HGT>
+  </Count>
+  <Count Data="74">
+    <UTC>2017-01-03,00:19:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541256</Lat>
+    <Lon>-77.524857</Lon>
+    <HGT>63</HGT>
+  </Count>
+  <Count Data="75">
+    <UTC>2017-01-03,00:20:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541294</Lat>
+    <Lon>-77.524834</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="76">
+    <UTC>2017-01-03,00:20:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="77">
+    <UTC>2017-01-03,00:20:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541412</Lat>
+    <Lon>-77.524849</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="78">
+    <UTC>2017-01-03,00:20:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541519</Lat>
+    <Lon>-77.524895</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="79">
+    <UTC>2017-01-03,00:21:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541008</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="80">
+    <UTC>2017-01-03,00:21:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="81">
+    <UTC>2017-01-03,00:21:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541294</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="82">
+    <UTC>2017-01-03,00:21:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541363</Lat>
+    <Lon>-77.524902</Lon>
+    <HGT>66</HGT>
+  </Count>
+  <Count Data="83">
+    <UTC>2017-01-03,00:22:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54134</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="84">
+    <UTC>2017-01-03,00:22:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541306</Lat>
+    <Lon>-77.524536</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="85">
+    <UTC>2017-01-03,00:22:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541298</Lat>
+    <Lon>-77.524536</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="86">
+    <UTC>2017-01-03,00:22:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541512</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="87">
+    <UTC>2017-01-03,00:23:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541519</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="88">
+    <UTC>2017-01-03,00:23:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541218</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="89">
+    <UTC>2017-01-03,00:23:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54101</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="90">
+    <UTC>2017-01-03,00:23:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541061</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>75</HGT>
+  </Count>
+  <Count Data="91">
+    <UTC>2017-01-03,00:24:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541161</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="92">
+    <UTC>2017-01-03,00:24:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541256</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="93">
+    <UTC>2017-01-03,00:24:40</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541435</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="94">
+    <UTC>2017-01-03,00:24:55</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541424</Lat>
+    <Lon>-77.524948</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="95">
+    <UTC>2017-01-03,00:25:10</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541191</Lat>
+    <Lon>-77.524818</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="96">
+    <UTC>2017-01-03,00:25:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541603</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="97">
+    <UTC>2017-01-03,00:26:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54134</Lat>
+    <Lon>-77.524719</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="98">
+    <UTC>2017-01-03,00:26:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541428</Lat>
+    <Lon>-77.524475</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="99">
+    <UTC>2017-01-03,00:26:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541553</Lat>
+    <Lon>-77.524452</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="100">
+    <UTC>2017-01-03,00:26:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541748</Lat>
+    <Lon>-77.524445</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="101">
+    <UTC>2017-01-03,00:27:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541206</Lat>
+    <Lon>-77.524818</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="102">
+    <UTC>2017-01-03,00:27:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541355</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>79</HGT>
+  </Count>
+  <Count Data="103">
+    <UTC>2017-01-03,00:28:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541279</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>83</HGT>
+  </Count>
+  <Count Data="104">
+    <UTC>2017-01-03,00:28:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541218</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>82</HGT>
+  </Count>
+  <Count Data="105">
+    <UTC>2017-01-03,00:28:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541069</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>81</HGT>
+  </Count>
+  <Count Data="106">
+    <UTC>2017-01-03,00:28:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541084</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>83</HGT>
+  </Count>
+  <Count Data="107">
+    <UTC>2017-01-03,00:29:18</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54108</Lat>
+    <Lon>-77.524811</Lon>
+    <HGT>83</HGT>
+  </Count>
+  <Count Data="108">
+    <UTC>2017-01-03,00:29:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541153</Lat>
+    <Lon>-77.524849</Lon>
+    <HGT>81</HGT>
+  </Count>
+  <Count Data="109">
+    <UTC>2017-01-03,00:29:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541271</Lat>
+    <Lon>-77.524826</Lon>
+    <HGT>80</HGT>
+  </Count>
+  <Count Data="110">
+    <UTC>2017-01-03,00:30:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541367</Lat>
+    <Lon>-77.524582</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="111">
+    <UTC>2017-01-03,00:30:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541473</Lat>
+    <Lon>-77.524994</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="112">
+    <UTC>2017-01-03,00:30:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541077</Lat>
+    <Lon>-77.524834</Lon>
+    <HGT>79</HGT>
+  </Count>
+  <Count Data="113">
+    <UTC>2017-01-03,00:30:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541069</Lat>
+    <Lon>-77.525047</Lon>
+    <HGT>81</HGT>
+  </Count>
+  <Count Data="114">
+    <UTC>2017-01-03,00:31:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541103</Lat>
+    <Lon>-77.524918</Lon>
+    <HGT>84</HGT>
+  </Count>
+  <Count Data="115">
+    <UTC>2017-01-03,00:31:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541164</Lat>
+    <Lon>-77.525124</Lon>
+    <HGT>87</HGT>
+  </Count>
+  <Count Data="116">
+    <UTC>2017-01-03,00:31:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540855</Lat>
+    <Lon>-77.524803</Lon>
+    <HGT>92</HGT>
+  </Count>
+  <Count Data="117">
+    <UTC>2017-01-03,00:31:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540421</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>99</HGT>
+  </Count>
+  <Count Data="118">
+    <UTC>2017-01-03,00:32:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540527</Lat>
+    <Lon>-77.524384</Lon>
+    <HGT>105</HGT>
+  </Count>
+  <Count Data="119">
+    <UTC>2017-01-03,00:32:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540771</Lat>
+    <Lon>-77.524376</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="120">
+    <UTC>2017-01-03,00:32:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540852</Lat>
+    <Lon>-77.524254</Lon>
+    <HGT>113</HGT>
+  </Count>
+  <Count Data="121">
+    <UTC>2017-01-03,00:32:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54111</Lat>
+    <Lon>-77.524376</Lon>
+    <HGT>113</HGT>
+  </Count>
+  <Count Data="122">
+    <UTC>2017-01-03,00:33:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541027</Lat>
+    <Lon>-77.524498</Lon>
+    <HGT>113</HGT>
+  </Count>
+  <Count Data="123">
+    <UTC>2017-01-03,00:33:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541031</Lat>
+    <Lon>-77.524368</Lon>
+    <HGT>113</HGT>
+  </Count>
+  <Count Data="124">
+    <UTC>2017-01-03,00:33:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541092</Lat>
+    <Lon>-77.524429</Lon>
+    <HGT>113</HGT>
+  </Count>
+  <Count Data="125">
+    <UTC>2017-01-03,00:33:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541016</Lat>
+    <Lon>-77.524521</Lon>
+    <HGT>113</HGT>
+  </Count>
+  <Count Data="126">
+    <UTC>2017-01-03,00:34:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541046</Lat>
+    <Lon>-77.524582</Lon>
+    <HGT>112</HGT>
+  </Count>
+  <Count Data="127">
+    <UTC>2017-01-03,00:34:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541138</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>111</HGT>
+  </Count>
+  <Count Data="128">
+    <UTC>2017-01-03,00:34:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541111</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="129">
+    <UTC>2017-01-03,00:34:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540863</Lat>
+    <Lon>-77.524452</Lon>
+    <HGT>109</HGT>
+  </Count>
+  <Count Data="130">
+    <UTC>2017-01-03,00:35:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540745</Lat>
+    <Lon>-77.524391</Lon>
+    <HGT>111</HGT>
+  </Count>
+  <Count Data="131">
+    <UTC>2017-01-03,00:35:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540905</Lat>
+    <Lon>-77.524506</Lon>
+    <HGT>111</HGT>
+  </Count>
+  <Count Data="132">
+    <UTC>2017-01-03,00:35:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540897</Lat>
+    <Lon>-77.524445</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="133">
+    <UTC>2017-01-03,00:35:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541187</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="134">
+    <UTC>2017-01-03,00:36:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541214</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="135">
+    <UTC>2017-01-03,00:36:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541115</Lat>
+    <Lon>-77.524551</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="136">
+    <UTC>2017-01-03,00:36:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541073</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="137">
+    <UTC>2017-01-03,00:36:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540855</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>112</HGT>
+  </Count>
+  <Count Data="138">
+    <UTC>2017-01-03,00:38:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541466</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>111</HGT>
+  </Count>
+  <Count Data="139">
+    <UTC>2017-01-03,00:39:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541637</Lat>
+    <Lon>-77.524574</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="140">
+    <UTC>2017-01-03,00:39:37</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54155</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>105</HGT>
+  </Count>
+  <Count Data="141">
+    <UTC>2017-01-03,00:39:52</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541584</Lat>
+    <Lon>-77.524643</Lon>
+    <HGT>101</HGT>
+  </Count>
+  <Count Data="142">
+    <UTC>2017-01-03,00:40:07</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54137</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>98</HGT>
+  </Count>
+  <Count Data="143">
+    <UTC>2017-01-03,00:40:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541309</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>99</HGT>
+  </Count>
+  <Count Data="144">
+    <UTC>2017-01-03,00:40:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541248</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>99</HGT>
+  </Count>
+  <Count Data="145">
+    <UTC>2017-01-03,00:40:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541214</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>98</HGT>
+  </Count>
+  <Count Data="146">
+    <UTC>2017-01-03,00:41:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541298</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>100</HGT>
+  </Count>
+  <Count Data="147">
+    <UTC>2017-01-03,00:41:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>100</HGT>
+  </Count>
+  <Count Data="148">
+    <UTC>2017-01-03,00:41:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540985</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>96</HGT>
+  </Count>
+  <Count Data="149">
+    <UTC>2017-01-03,00:42:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540878</Lat>
+    <Lon>-77.524582</Lon>
+    <HGT>92</HGT>
+  </Count>
+  <Count Data="150">
+    <UTC>2017-01-03,00:42:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541248</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>90</HGT>
+  </Count>
+  <Count Data="151">
+    <UTC>2017-01-03,00:42:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541183</Lat>
+    <Lon>-77.524879</Lon>
+    <HGT>92</HGT>
+  </Count>
+  <Count Data="152">
+    <UTC>2017-01-03,00:42:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54118</Lat>
+    <Lon>-77.524826</Lon>
+    <HGT>93</HGT>
+  </Count>
+  <Count Data="153">
+    <UTC>2017-01-03,00:43:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541183</Lat>
+    <Lon>-77.524811</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="154">
+    <UTC>2017-01-03,00:43:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541218</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="155">
+    <UTC>2017-01-03,00:43:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54129</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>96</HGT>
+  </Count>
+  <Count Data="156">
+    <UTC>2017-01-03,00:43:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="157">
+    <UTC>2017-01-03,00:44:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541286</Lat>
+    <Lon>-77.524643</Lon>
+    <HGT>93</HGT>
+  </Count>
+  <Count Data="158">
+    <UTC>2017-01-03,00:44:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541203</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>91</HGT>
+  </Count>
+  <Count Data="159">
+    <UTC>2017-01-03,00:44:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541046</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>91</HGT>
+  </Count>
+  <Count Data="160">
+    <UTC>2017-01-03,00:44:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541019</Lat>
+    <Lon>-77.524719</Lon>
+    <HGT>91</HGT>
+  </Count>
+  <Count Data="161">
+    <UTC>2017-01-03,00:45:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541031</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>91</HGT>
+  </Count>
+  <Count Data="162">
+    <UTC>2017-01-03,00:45:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541138</Lat>
+    <Lon>-77.524544</Lon>
+    <HGT>92</HGT>
+  </Count>
+  <Count Data="163">
+    <UTC>2017-01-03,00:45:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540955</Lat>
+    <Lon>-77.52421</Lon>
+    <HGT>94</HGT>
+  </Count>
+  <Count Data="164">
+    <UTC>2017-01-03,00:45:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541294</Lat>
+    <Lon>-77.524437</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="165">
+    <UTC>2017-01-03,00:46:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541553</Lat>
+    <Lon>-77.524574</Lon>
+    <HGT>100</HGT>
+  </Count>
+  <Count Data="166">
+    <UTC>2017-01-03,00:46:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541496</Lat>
+    <Lon>-77.524536</Lon>
+    <HGT>108</HGT>
+  </Count>
+  <Count Data="167">
+    <UTC>2017-01-03,00:46:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541664</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>116</HGT>
+  </Count>
+  <Count Data="168">
+    <UTC>2017-01-03,00:46:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541962</Lat>
+    <Lon>-77.524803</Lon>
+    <HGT>124</HGT>
+  </Count>
+  <Count Data="169">
+    <UTC>2017-01-03,00:47:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541965</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>116</HGT>
+  </Count>
+  <Count Data="170">
+    <UTC>2017-01-03,00:47:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541046</Lat>
+    <Lon>-77.524139</Lon>
+    <HGT>119</HGT>
+  </Count>
+  <Count Data="171">
+    <UTC>2017-01-03,00:48:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540974</Lat>
+    <Lon>-77.524162</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="172">
+    <UTC>2017-01-03,00:48:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540958</Lat>
+    <Lon>-77.524101</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="173">
+    <UTC>2017-01-03,00:48:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54113</Lat>
+    <Lon>-77.524376</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="174">
+    <UTC>2017-01-03,00:48:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541302</Lat>
+    <Lon>-77.52431</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="175">
+    <UTC>2017-01-03,00:49:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541321</Lat>
+    <Lon>-77.524246</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="176">
+    <UTC>2017-01-03,00:49:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540844</Lat>
+    <Lon>-77.523941</Lon>
+    <HGT>121</HGT>
+  </Count>
+  <Count Data="177">
+    <UTC>2017-01-03,00:49:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540585</Lat>
+    <Lon>-77.523849</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="178">
+    <UTC>2017-01-03,00:49:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540619</Lat>
+    <Lon>-77.523872</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="179">
+    <UTC>2017-01-03,00:50:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540604</Lat>
+    <Lon>-77.523911</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="180">
+    <UTC>2017-01-03,00:50:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54055</Lat>
+    <Lon>-77.523888</Lon>
+    <HGT>121</HGT>
+  </Count>
+  <Count Data="181">
+    <UTC>2017-01-03,00:50:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540527</Lat>
+    <Lon>-77.523842</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="182">
+    <UTC>2017-01-03,00:50:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540516</Lat>
+    <Lon>-77.524178</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="183">
+    <UTC>2017-01-03,00:51:18</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540894</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="184">
+    <UTC>2017-01-03,00:51:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541576</Lat>
+    <Lon>-77.524895</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="185">
+    <UTC>2017-01-03,00:51:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.542027</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="186">
+    <UTC>2017-01-03,00:52:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.542084</Lat>
+    <Lon>-77.52431</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="187">
+    <UTC>2017-01-03,00:52:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541172</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>124</HGT>
+  </Count>
+  <Count Data="188">
+    <UTC>2017-01-03,00:52:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541107</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>127</HGT>
+  </Count>
+  <Count Data="189">
+    <UTC>2017-01-03,00:53:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541473</Lat>
+    <Lon>-77.524345</Lon>
+    <HGT>124</HGT>
+  </Count>
+  <Count Data="190">
+    <UTC>2017-01-03,00:54:20</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541412</Lat>
+    <Lon>-77.523941</Lon>
+    <HGT>124</HGT>
+  </Count>
+  <Count Data="191">
+    <UTC>2017-01-03,00:54:35</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541782</Lat>
+    <Lon>-77.522179</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="192">
+    <UTC>2017-01-03,00:55:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541245</Lat>
+    <Lon>-77.524536</Lon>
+    <HGT>91</HGT>
+  </Count>
+  <Count Data="193">
+    <UTC>2017-01-03,00:56:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541393</Lat>
+    <Lon>-77.52459</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="194">
+    <UTC>2017-01-03,00:56:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541382</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>126</HGT>
+  </Count>
+  <Count Data="195">
+    <UTC>2017-01-03,00:56:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541462</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>131</HGT>
+  </Count>
+  <Count Data="196">
+    <UTC>2017-01-03,00:56:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541618</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>134</HGT>
+  </Count>
+  <Count Data="197">
+    <UTC>2017-01-03,00:57:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541595</Lat>
+    <Lon>-77.524635</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="198">
+    <UTC>2017-01-03,00:57:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541515</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="199">
+    <UTC>2017-01-03,00:58:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541561</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="200">
+    <UTC>2017-01-03,00:58:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541599</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="201">
+    <UTC>2017-01-03,00:58:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541592</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="202">
+    <UTC>2017-01-03,00:58:55</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541252</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>136</HGT>
+  </Count>
+  <Count Data="203">
+    <UTC>2017-01-03,00:59:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541275</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="204">
+    <UTC>2017-01-03,00:59:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541107</Lat>
+    <Lon>-77.524094</Lon>
+    <HGT>136</HGT>
+  </Count>
+  <Count Data="205">
+    <UTC>2017-01-03,00:59:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541164</Lat>
+    <Lon>-77.524155</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="206">
+    <UTC>2017-01-03,00:59:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541359</Lat>
+    <Lon>-77.524544</Lon>
+    <HGT>137</HGT>
+  </Count>
+  <Count Data="207">
+    <UTC>2017-01-03,01:00:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541351</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>136</HGT>
+  </Count>
+  <Count Data="208">
+    <UTC>2017-01-03,01:00:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541332</Lat>
+    <Lon>-77.524796</Lon>
+    <HGT>136</HGT>
+  </Count>
+  <Count Data="209">
+    <UTC>2017-01-03,01:00:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541298</Lat>
+    <Lon>-77.524803</Lon>
+    <HGT>136</HGT>
+  </Count>
+  <Count Data="210">
+    <UTC>2017-01-03,01:01:00</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541245</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="211">
+    <UTC>2017-01-03,01:01:15</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541218</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>134</HGT>
+  </Count>
+  <Count Data="212">
+    <UTC>2017-01-03,01:01:30</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541233</Lat>
+    <Lon>-77.524803</Lon>
+    <HGT>134</HGT>
+  </Count>
+  <Count Data="213">
+    <UTC>2017-01-03,01:01:45</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541313</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="214">
+    <UTC>2017-01-03,01:02:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541367</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="215">
+    <UTC>2017-01-03,01:02:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541225</Lat>
+    <Lon>-77.524864</Lon>
+    <HGT>132</HGT>
+  </Count>
+  <Count Data="216">
+    <UTC>2017-01-03,01:02:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541267</Lat>
+    <Lon>-77.524872</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="217">
+    <UTC>2017-01-03,01:02:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541386</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="218">
+    <UTC>2017-01-03,01:03:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541454</Lat>
+    <Lon>-77.524567</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="219">
+    <UTC>2017-01-03,01:03:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541473</Lat>
+    <Lon>-77.524574</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="220">
+    <UTC>2017-01-03,01:03:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541462</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="221">
+    <UTC>2017-01-03,01:03:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541519</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>132</HGT>
+  </Count>
+  <Count Data="222">
+    <UTC>2017-01-03,01:04:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541485</Lat>
+    <Lon>-77.524582</Lon>
+    <HGT>132</HGT>
+  </Count>
+  <Count Data="223">
+    <UTC>2017-01-03,01:04:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541355</Lat>
+    <Lon>-77.52459</Lon>
+    <HGT>131</HGT>
+  </Count>
+  <Count Data="224">
+    <UTC>2017-01-03,01:04:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541363</Lat>
+    <Lon>-77.524796</Lon>
+    <HGT>130</HGT>
+  </Count>
+  <Count Data="225">
+    <UTC>2017-01-03,01:04:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541336</Lat>
+    <Lon>-77.525009</Lon>
+    <HGT>128</HGT>
+  </Count>
+  <Count Data="226">
+    <UTC>2017-01-03,01:05:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541206</Lat>
+    <Lon>-77.524818</Lon>
+    <HGT>127</HGT>
+  </Count>
+  <Count Data="227">
+    <UTC>2017-01-03,01:05:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541283</Lat>
+    <Lon>-77.52449</Lon>
+    <HGT>125</HGT>
+  </Count>
+  <Count Data="228">
+    <UTC>2017-01-03,01:06:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541103</Lat>
+    <Lon>-77.52494</Lon>
+    <HGT>127</HGT>
+  </Count>
+  <Count Data="229">
+    <UTC>2017-01-03,01:06:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541008</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>129</HGT>
+  </Count>
+  <Count Data="230">
+    <UTC>2017-01-03,01:07:15</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541237</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>131</HGT>
+  </Count>
+  <Count Data="231">
+    <UTC>2017-01-03,01:07:30</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541367</Lat>
+    <Lon>-77.524818</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="232">
+    <UTC>2017-01-03,01:07:45</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541298</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>134</HGT>
+  </Count>
+  <Count Data="233">
+    <UTC>2017-01-03,01:08:00</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541241</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="234">
+    <UTC>2017-01-03,01:08:15</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541283</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="235">
+    <UTC>2017-01-03,01:08:30</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541443</Lat>
+    <Lon>-77.524796</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="236">
+    <UTC>2017-01-03,01:08:45</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541435</Lat>
+    <Lon>-77.524818</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="237">
+    <UTC>2017-01-03,01:09:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541542</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="238">
+    <UTC>2017-01-03,01:09:20</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541363</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="239">
+    <UTC>2017-01-03,01:09:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541107</Lat>
+    <Lon>-77.524826</Lon>
+    <HGT>135</HGT>
+  </Count>
+  <Count Data="240">
+    <UTC>2017-01-03,01:10:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541206</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>133</HGT>
+  </Count>
+  <Count Data="241">
+    <UTC>2017-01-03,01:10:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541565</Lat>
+    <Lon>-77.524429</Lon>
+    <HGT>131</HGT>
+  </Count>
+  <Count Data="242">
+    <UTC>2017-01-03,01:10:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54155</Lat>
+    <Lon>-77.524483</Lon>
+    <HGT>129</HGT>
+  </Count>
+  <Count Data="243">
+    <UTC>2017-01-03,01:10:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54158</Lat>
+    <Lon>-77.524864</Lon>
+    <HGT>127</HGT>
+  </Count>
+  <Count Data="244">
+    <UTC>2017-01-03,01:11:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541622</Lat>
+    <Lon>-77.524948</Lon>
+    <HGT>125</HGT>
+  </Count>
+  <Count Data="245">
+    <UTC>2017-01-03,01:11:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541775</Lat>
+    <Lon>-77.525108</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="246">
+    <UTC>2017-01-03,01:11:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541759</Lat>
+    <Lon>-77.525177</Lon>
+    <HGT>121</HGT>
+  </Count>
+  <Count Data="247">
+    <UTC>2017-01-03,01:11:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541691</Lat>
+    <Lon>-77.525139</Lon>
+    <HGT>120</HGT>
+  </Count>
+  <Count Data="248">
+    <UTC>2017-01-03,01:12:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541656</Lat>
+    <Lon>-77.524902</Lon>
+    <HGT>121</HGT>
+  </Count>
+  <Count Data="249">
+    <UTC>2017-01-03,01:12:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541634</Lat>
+    <Lon>-77.524895</Lon>
+    <HGT>121</HGT>
+  </Count>
+  <Count Data="250">
+    <UTC>2017-01-03,01:12:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541649</Lat>
+    <Lon>-77.524719</Lon>
+    <HGT>122</HGT>
+  </Count>
+  <Count Data="251">
+    <UTC>2017-01-03,01:12:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541683</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="252">
+    <UTC>2017-01-03,01:13:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541759</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>125</HGT>
+  </Count>
+  <Count Data="253">
+    <UTC>2017-01-03,01:13:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541649</Lat>
+    <Lon>-77.524551</Lon>
+    <HGT>127</HGT>
+  </Count>
+  <Count Data="254">
+    <UTC>2017-01-03,01:13:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541615</Lat>
+    <Lon>-77.524635</Lon>
+    <HGT>128</HGT>
+  </Count>
+  <Count Data="255">
+    <UTC>2017-01-03,01:13:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541645</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>131</HGT>
+  </Count>
+  <Count Data="256">
+    <UTC>2017-01-03,01:14:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54174</Lat>
+    <Lon>-77.524643</Lon>
+    <HGT>136</HGT>
+  </Count>
+  <Count Data="257">
+    <UTC>2017-01-03,01:14:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541672</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>140</HGT>
+  </Count>
+  <Count Data="258">
+    <UTC>2017-01-03,01:14:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541546</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>144</HGT>
+  </Count>
+  <Count Data="259">
+    <UTC>2017-01-03,01:14:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541508</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>145</HGT>
+  </Count>
+  <Count Data="260">
+    <UTC>2017-01-03,01:15:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541546</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>146</HGT>
+  </Count>
+  <Count Data="261">
+    <UTC>2017-01-03,01:15:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541519</Lat>
+    <Lon>-77.524628</Lon>
+    <HGT>145</HGT>
+  </Count>
+  <Count Data="262">
+    <UTC>2017-01-03,01:15:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541599</Lat>
+    <Lon>-77.52459</Lon>
+    <HGT>143</HGT>
+  </Count>
+  <Count Data="263">
+    <UTC>2017-01-03,01:15:57</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54166</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>140</HGT>
+  </Count>
+  <Count Data="264">
+    <UTC>2017-01-03,01:16:12</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541588</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>139</HGT>
+  </Count>
+  <Count Data="265">
+    <UTC>2017-01-03,01:16:27</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541084</Lat>
+    <Lon>-77.524384</Lon>
+    <HGT>139</HGT>
+  </Count>
+  <Count Data="266">
+    <UTC>2017-01-03,01:16:42</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540955</Lat>
+    <Lon>-77.524254</Lon>
+    <HGT>139</HGT>
+  </Count>
+  <Count Data="267">
+    <UTC>2017-01-03,01:16:57</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54105</Lat>
+    <Lon>-77.524384</Lon>
+    <HGT>139</HGT>
+  </Count>
+  <Count Data="268">
+    <UTC>2017-01-03,01:17:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541111</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>139</HGT>
+  </Count>
+  <Count Data="269">
+    <UTC>2017-01-03,01:17:31</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541214</Lat>
+    <Lon>-77.524574</Lon>
+    <HGT>139</HGT>
+  </Count>
+  <Count Data="270">
+    <UTC>2017-01-03,01:17:46</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541183</Lat>
+    <Lon>-77.524513</Lon>
+    <HGT>139</HGT>
+  </Count>
+  <Count Data="271">
+    <UTC>2017-01-03,01:18:01</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541203</Lat>
+    <Lon>-77.524574</Lon>
+    <HGT>140</HGT>
+  </Count>
+  <Count Data="272">
+    <UTC>2017-01-03,01:18:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54129</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>141</HGT>
+  </Count>
+  <Count Data="273">
+    <UTC>2017-01-03,01:18:31</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541393</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>143</HGT>
+  </Count>
+  <Count Data="274">
+    <UTC>2017-01-03,01:19:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541557</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>144</HGT>
+  </Count>
+  <Count Data="275">
+    <UTC>2017-01-03,01:20:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541576</Lat>
+    <Lon>-77.524452</Lon>
+    <HGT>144</HGT>
+  </Count>
+  <Count Data="276">
+    <UTC>2017-01-03,01:20:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541451</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>143</HGT>
+  </Count>
+  <Count Data="277">
+    <UTC>2017-01-03,01:20:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541531</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>144</HGT>
+  </Count>
+  <Count Data="278">
+    <UTC>2017-01-03,01:21:05</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541687</Lat>
+    <Lon>-77.525055</Lon>
+    <HGT>145</HGT>
+  </Count>
+  <Count Data="279">
+    <UTC>2017-01-03,01:21:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.542023</Lat>
+    <Lon>-77.52581</Lon>
+    <HGT>147</HGT>
+  </Count>
+  <Count Data="280">
+    <UTC>2017-01-03,01:21:44</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541576</Lat>
+    <Lon>-77.525276</Lon>
+    <HGT>149</HGT>
+  </Count>
+  <Count Data="281">
+    <UTC>2017-01-03,01:21:59</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541523</Lat>
+    <Lon>-77.524971</Lon>
+    <HGT>149</HGT>
+  </Count>
+  <Count Data="282">
+    <UTC>2017-01-03,01:22:14</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54151</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>149</HGT>
+  </Count>
+  <Count Data="283">
+    <UTC>2017-01-03,01:22:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541462</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>150</HGT>
+  </Count>
+  <Count Data="284">
+    <UTC>2017-01-03,01:23:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541515</Lat>
+    <Lon>-77.524452</Lon>
+    <HGT>152</HGT>
+  </Count>
+  <Count Data="285">
+    <UTC>2017-01-03,01:23:37</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541233</Lat>
+    <Lon>-77.524033</Lon>
+    <HGT>156</HGT>
+  </Count>
+  <Count Data="286">
+    <UTC>2017-01-03,01:23:52</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54121</Lat>
+    <Lon>-77.524269</Lon>
+    <HGT>158</HGT>
+  </Count>
+  <Count Data="287">
+    <UTC>2017-01-03,01:24:07</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540768</Lat>
+    <Lon>-77.523773</Lon>
+    <HGT>160</HGT>
+  </Count>
+  <Count Data="288">
+    <UTC>2017-01-03,01:24:22</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540478</Lat>
+    <Lon>-77.523415</Lon>
+    <HGT>161</HGT>
+  </Count>
+  <Count Data="289">
+    <UTC>2017-01-03,01:24:37</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54071</Lat>
+    <Lon>-77.523636</Lon>
+    <HGT>163</HGT>
+  </Count>
+  <Count Data="290">
+    <UTC>2017-01-03,01:24:52</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540752</Lat>
+    <Lon>-77.523651</Lon>
+    <HGT>163</HGT>
+  </Count>
+  <Count Data="291">
+    <UTC>2017-01-03,01:25:07</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54151</Lat>
+    <Lon>-77.52446</Lon>
+    <HGT>163</HGT>
+  </Count>
+  <Count Data="292">
+    <UTC>2017-01-03,01:25:22</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541592</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>162</HGT>
+  </Count>
+  <Count Data="293">
+    <UTC>2017-01-03,01:25:37</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541565</Lat>
+    <Lon>-77.524811</Lon>
+    <HGT>162</HGT>
+  </Count>
+  <Count Data="294">
+    <UTC>2017-01-03,01:25:52</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541512</Lat>
+    <Lon>-77.524849</Lon>
+    <HGT>163</HGT>
+  </Count>
+  <Count Data="295">
+    <UTC>2017-01-03,01:26:22</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541542</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>166</HGT>
+  </Count>
+  <Count Data="296">
+    <UTC>2017-01-03,01:26:37</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541538</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>172</HGT>
+  </Count>
+  <Count Data="297">
+    <UTC>2017-01-03,01:27:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541561</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>171</HGT>
+  </Count>
+  <Count Data="298">
+    <UTC>2017-01-03,01:27:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541466</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>171</HGT>
+  </Count>
+  <Count Data="299">
+    <UTC>2017-01-03,01:27:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541309</Lat>
+    <Lon>-77.524559</Lon>
+    <HGT>171</HGT>
+  </Count>
+  <Count Data="300">
+    <UTC>2017-01-03,01:28:10</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541458</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>173</HGT>
+  </Count>
+  <Count Data="301">
+    <UTC>2017-01-03,01:28:25</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54147</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>173</HGT>
+  </Count>
+  <Count Data="302">
+    <UTC>2017-01-03,01:28:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541508</Lat>
+    <Lon>-77.524567</Lon>
+    <HGT>172</HGT>
+  </Count>
+  <Count Data="303">
+    <UTC>2017-01-03,01:29:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541519</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>174</HGT>
+  </Count>
+  <Count Data="304">
+    <UTC>2017-01-03,01:29:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541489</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>174</HGT>
+  </Count>
+  <Count Data="305">
+    <UTC>2017-01-03,01:29:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541393</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>175</HGT>
+  </Count>
+  <Count Data="306">
+    <UTC>2017-01-03,01:29:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541378</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>176</HGT>
+  </Count>
+  <Count Data="307">
+    <UTC>2017-01-03,01:30:05</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541424</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>178</HGT>
+  </Count>
+  <Count Data="308">
+    <UTC>2017-01-03,01:30:20</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541378</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>179</HGT>
+  </Count>
+  <Count Data="309">
+    <UTC>2017-01-03,01:30:35</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541328</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>180</HGT>
+  </Count>
+  <Count Data="310">
+    <UTC>2017-01-03,01:31:01</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541389</Lat>
+    <Lon>-77.524811</Lon>
+    <HGT>180</HGT>
+  </Count>
+  <Count Data="311">
+    <UTC>2017-01-03,01:31:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54147</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>175</HGT>
+  </Count>
+  <Count Data="312">
+    <UTC>2017-01-03,01:31:31</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541534</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>169</HGT>
+  </Count>
+  <Count Data="313">
+    <UTC>2017-01-03,01:31:46</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541512</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>165</HGT>
+  </Count>
+  <Count Data="314">
+    <UTC>2017-01-03,01:32:01</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541523</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>159</HGT>
+  </Count>
+  <Count Data="315">
+    <UTC>2017-01-03,01:32:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541561</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>154</HGT>
+  </Count>
+  <Count Data="316">
+    <UTC>2017-01-03,01:32:31</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541569</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>151</HGT>
+  </Count>
+  <Count Data="317">
+    <UTC>2017-01-03,01:32:46</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54158</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>149</HGT>
+  </Count>
+  <Count Data="318">
+    <UTC>2017-01-03,01:33:18</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541779</Lat>
+    <Lon>-77.524559</Lon>
+    <HGT>149</HGT>
+  </Count>
+  <Count Data="319">
+    <UTC>2017-01-03,01:33:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541706</Lat>
+    <Lon>-77.524902</Lon>
+    <HGT>147</HGT>
+  </Count>
+  <Count Data="320">
+    <UTC>2017-01-03,01:33:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541683</Lat>
+    <Lon>-77.524971</Lon>
+    <HGT>144</HGT>
+  </Count>
+  <Count Data="321">
+    <UTC>2017-01-03,01:34:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541649</Lat>
+    <Lon>-77.525131</Lon>
+    <HGT>140</HGT>
+  </Count>
+  <Count Data="322">
+    <UTC>2017-01-03,01:34:18</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541569</Lat>
+    <Lon>-77.525024</Lon>
+    <HGT>138</HGT>
+  </Count>
+  <Count Data="323">
+    <UTC>2017-01-03,01:34:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54142</Lat>
+    <Lon>-77.52504</Lon>
+    <HGT>132</HGT>
+  </Count>
+  <Count Data="324">
+    <UTC>2017-01-03,01:35:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54151</Lat>
+    <Lon>-77.524635</Lon>
+    <HGT>126</HGT>
+  </Count>
+  <Count Data="325">
+    <UTC>2017-01-03,01:35:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541451</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>123</HGT>
+  </Count>
+  <Count Data="326">
+    <UTC>2017-01-03,01:35:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541489</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>120</HGT>
+  </Count>
+  <Count Data="327">
+    <UTC>2017-01-03,01:35:55</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541489</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>115</HGT>
+  </Count>
+  <Count Data="328">
+    <UTC>2017-01-03,01:36:10</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54137</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>110</HGT>
+  </Count>
+  <Count Data="329">
+    <UTC>2017-01-03,01:36:25</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54134</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>105</HGT>
+  </Count>
+  <Count Data="330">
+    <UTC>2017-01-03,01:36:46</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541252</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>103</HGT>
+  </Count>
+  <Count Data="331">
+    <UTC>2017-01-03,01:37:01</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.524544</Lon>
+    <HGT>98</HGT>
+  </Count>
+  <Count Data="332">
+    <UTC>2017-01-03,01:37:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541363</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>96</HGT>
+  </Count>
+  <Count Data="333">
+    <UTC>2017-01-03,01:37:31</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541431</Lat>
+    <Lon>-77.524628</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="334">
+    <UTC>2017-01-03,01:37:46</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541409</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="335">
+    <UTC>2017-01-03,01:38:01</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541412</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="336">
+    <UTC>2017-01-03,01:38:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541359</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="337">
+    <UTC>2017-01-03,01:38:31</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541397</Lat>
+    <Lon>-77.524841</Lon>
+    <HGT>95</HGT>
+  </Count>
+  <Count Data="338">
+    <UTC>2017-01-03,01:38:46</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541492</Lat>
+    <Lon>-77.525024</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="339">
+    <UTC>2017-01-03,01:39:01</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541504</Lat>
+    <Lon>-77.525017</Lon>
+    <HGT>98</HGT>
+  </Count>
+  <Count Data="340">
+    <UTC>2017-01-03,01:39:27</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541431</Lat>
+    <Lon>-77.524879</Lon>
+    <HGT>98</HGT>
+  </Count>
+  <Count Data="341">
+    <UTC>2017-01-03,01:39:42</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541336</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>96</HGT>
+  </Count>
+  <Count Data="342">
+    <UTC>2017-01-03,01:39:57</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541321</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>96</HGT>
+  </Count>
+  <Count Data="343">
+    <UTC>2017-01-03,01:40:12</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541286</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="344">
+    <UTC>2017-01-03,01:40:27</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541122</Lat>
+    <Lon>-77.524437</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="345">
+    <UTC>2017-01-03,01:41:00</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540924</Lat>
+    <Lon>-77.523842</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="346">
+    <UTC>2017-01-03,01:41:15</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54108</Lat>
+    <Lon>-77.524071</Lon>
+    <HGT>98</HGT>
+  </Count>
+  <Count Data="347">
+    <UTC>2017-01-03,01:41:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541126</Lat>
+    <Lon>-77.524002</Lon>
+    <HGT>99</HGT>
+  </Count>
+  <Count Data="348">
+    <UTC>2017-01-03,01:41:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.524193</Lon>
+    <HGT>99</HGT>
+  </Count>
+  <Count Data="349">
+    <UTC>2017-01-03,01:42:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541431</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>98</HGT>
+  </Count>
+  <Count Data="350">
+    <UTC>2017-01-03,01:42:18</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541424</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="351">
+    <UTC>2017-01-03,01:42:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541424</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>97</HGT>
+  </Count>
+  <Count Data="352">
+    <UTC>2017-01-03,01:42:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541195</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>93</HGT>
+  </Count>
+  <Count Data="353">
+    <UTC>2017-01-03,01:43:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54121</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>90</HGT>
+  </Count>
+  <Count Data="354">
+    <UTC>2017-01-03,01:43:18</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541336</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>88</HGT>
+  </Count>
+  <Count Data="355">
+    <UTC>2017-01-03,01:43:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541382</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>87</HGT>
+  </Count>
+  <Count Data="356">
+    <UTC>2017-01-03,01:44:03</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541409</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>86</HGT>
+  </Count>
+  <Count Data="357">
+    <UTC>2017-01-03,01:44:18</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541477</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>85</HGT>
+  </Count>
+  <Count Data="358">
+    <UTC>2017-01-03,01:44:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541473</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>84</HGT>
+  </Count>
+  <Count Data="359">
+    <UTC>2017-01-03,01:44:48</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541409</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>84</HGT>
+  </Count>
+  <Count Data="360">
+    <UTC>2017-01-03,01:45:12</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541363</Lat>
+    <Lon>-77.524376</Lon>
+    <HGT>81</HGT>
+  </Count>
+  <Count Data="361">
+    <UTC>2017-01-03,01:45:27</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54121</Lat>
+    <Lon>-77.524109</Lon>
+    <HGT>80</HGT>
+  </Count>
+  <Count Data="362">
+    <UTC>2017-01-03,01:45:42</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54113</Lat>
+    <Lon>-77.524178</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="363">
+    <UTC>2017-01-03,01:46:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541298</Lat>
+    <Lon>-77.524635</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="364">
+    <UTC>2017-01-03,01:46:31</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541298</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="365">
+    <UTC>2017-01-03,01:46:46</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54137</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="366">
+    <UTC>2017-01-03,01:47:01</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541477</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>69</HGT>
+  </Count>
+  <Count Data="367">
+    <UTC>2017-01-03,01:47:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54142</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="368">
+    <UTC>2017-01-03,01:47:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541325</Lat>
+    <Lon>-77.524612</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="369">
+    <UTC>2017-01-03,01:48:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541317</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>63</HGT>
+  </Count>
+  <Count Data="370">
+    <UTC>2017-01-03,01:48:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541332</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>63</HGT>
+  </Count>
+  <Count Data="371">
+    <UTC>2017-01-03,01:48:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54129</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>63</HGT>
+  </Count>
+  <Count Data="372">
+    <UTC>2017-01-03,01:48:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541199</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>62</HGT>
+  </Count>
+  <Count Data="373">
+    <UTC>2017-01-03,01:49:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54118</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>62</HGT>
+  </Count>
+  <Count Data="374">
+    <UTC>2017-01-03,01:49:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54118</Lat>
+    <Lon>-77.524574</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="375">
+    <UTC>2017-01-03,01:49:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541168</Lat>
+    <Lon>-77.524567</Lon>
+    <HGT>60</HGT>
+  </Count>
+  <Count Data="376">
+    <UTC>2017-01-03,01:49:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541183</Lat>
+    <Lon>-77.52459</Lon>
+    <HGT>60</HGT>
+  </Count>
+  <Count Data="377">
+    <UTC>2017-01-03,01:50:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541164</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="378">
+    <UTC>2017-01-03,01:50:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541199</Lat>
+    <Lon>-77.524628</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="379">
+    <UTC>2017-01-03,01:50:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541187</Lat>
+    <Lon>-77.524643</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="380">
+    <UTC>2017-01-03,01:50:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541149</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>60</HGT>
+  </Count>
+  <Count Data="381">
+    <UTC>2017-01-03,01:51:04</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541161</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="382">
+    <UTC>2017-01-03,01:51:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541191</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="383">
+    <UTC>2017-01-03,01:51:34</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541214</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="384">
+    <UTC>2017-01-03,01:51:49</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541256</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="385">
+    <UTC>2017-01-03,01:52:22</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541138</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>62</HGT>
+  </Count>
+  <Count Data="386">
+    <UTC>2017-01-03,01:52:37</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541073</Lat>
+    <Lon>-77.524399</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="387">
+    <UTC>2017-01-03,01:52:52</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541157</Lat>
+    <Lon>-77.524254</Lon>
+    <HGT>59</HGT>
+  </Count>
+  <Count Data="388">
+    <UTC>2017-01-03,01:53:07</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541134</Lat>
+    <Lon>-77.524246</Lon>
+    <HGT>57</HGT>
+  </Count>
+  <Count Data="389">
+    <UTC>2017-01-03,01:53:33</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54137</Lat>
+    <Lon>-77.524826</Lon>
+    <HGT>59</HGT>
+  </Count>
+  <Count Data="390">
+    <UTC>2017-01-03,01:54:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541527</Lat>
+    <Lon>-77.524849</Lon>
+    <HGT>60</HGT>
+  </Count>
+  <Count Data="391">
+    <UTC>2017-01-03,01:54:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.52446</Lon>
+    <HGT>60</HGT>
+  </Count>
+  <Count Data="392">
+    <UTC>2017-01-03,01:54:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54105</Lat>
+    <Lon>-77.524307</Lon>
+    <HGT>60</HGT>
+  </Count>
+  <Count Data="393">
+    <UTC>2017-01-03,01:54:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541122</Lat>
+    <Lon>-77.524521</Lon>
+    <HGT>60</HGT>
+  </Count>
+  <Count Data="394">
+    <UTC>2017-01-03,01:55:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541172</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>61</HGT>
+  </Count>
+  <Count Data="395">
+    <UTC>2017-01-03,01:55:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541317</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>63</HGT>
+  </Count>
+  <Count Data="396">
+    <UTC>2017-01-03,01:55:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541389</Lat>
+    <Lon>-77.524788</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="397">
+    <UTC>2017-01-03,01:55:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541344</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="398">
+    <UTC>2017-01-03,01:56:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541321</Lat>
+    <Lon>-77.524628</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="399">
+    <UTC>2017-01-03,01:56:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541309</Lat>
+    <Lon>-77.524658</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="400">
+    <UTC>2017-01-03,01:56:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541306</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>64</HGT>
+  </Count>
+  <Count Data="401">
+    <UTC>2017-01-03,01:56:53</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.524551</Lon>
+    <HGT>65</HGT>
+  </Count>
+  <Count Data="402">
+    <UTC>2017-01-03,01:57:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541256</Lat>
+    <Lon>-77.524551</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="403">
+    <UTC>2017-01-03,01:57:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541218</Lat>
+    <Lon>-77.524376</Lon>
+    <HGT>67</HGT>
+  </Count>
+  <Count Data="404">
+    <UTC>2017-01-03,01:58:14</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541233</Lat>
+    <Lon>-77.524261</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="405">
+    <UTC>2017-01-03,01:58:29</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541195</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="406">
+    <UTC>2017-01-03,01:58:44</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540981</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="407">
+    <UTC>2017-01-03,01:59:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541161</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>80</HGT>
+  </Count>
+  <Count Data="408">
+    <UTC>2017-01-03,01:59:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541302</Lat>
+    <Lon>-77.524635</Lon>
+    <HGT>86</HGT>
+  </Count>
+  <Count Data="409">
+    <UTC>2017-01-03,01:59:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541298</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>88</HGT>
+  </Count>
+  <Count Data="410">
+    <UTC>2017-01-03,02:00:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541363</Lat>
+    <Lon>-77.524956</Lon>
+    <HGT>88</HGT>
+  </Count>
+  <Count Data="411">
+    <UTC>2017-01-03,02:03:16</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541203</Lat>
+    <Lon>-77.52475</Lon>
+    <HGT>89</HGT>
+  </Count>
+  <Count Data="412">
+    <UTC>2017-01-03,02:04:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541309</Lat>
+    <Lon>-77.524757</Lon>
+    <HGT>87</HGT>
+  </Count>
+  <Count Data="413">
+    <UTC>2017-01-03,02:04:23</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541485</Lat>
+    <Lon>-77.524834</Lon>
+    <HGT>79</HGT>
+  </Count>
+  <Count Data="414">
+    <UTC>2017-01-03,02:04:38</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54137</Lat>
+    <Lon>-77.524818</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="415">
+    <UTC>2017-01-03,02:04:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="416">
+    <UTC>2017-01-03,02:05:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541264</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="417">
+    <UTC>2017-01-03,02:05:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541153</Lat>
+    <Lon>-77.524544</Lon>
+    <HGT>75</HGT>
+  </Count>
+  <Count Data="418">
+    <UTC>2017-01-03,02:05:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541115</Lat>
+    <Lon>-77.524536</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="419">
+    <UTC>2017-01-03,02:05:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541046</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="420">
+    <UTC>2017-01-03,02:06:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541134</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="421">
+    <UTC>2017-01-03,02:06:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541161</Lat>
+    <Lon>-77.524696</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="422">
+    <UTC>2017-01-03,02:06:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541241</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>70</HGT>
+  </Count>
+  <Count Data="423">
+    <UTC>2017-01-03,02:06:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541336</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>70</HGT>
+  </Count>
+  <Count Data="424">
+    <UTC>2017-01-03,02:07:13</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541359</Lat>
+    <Lon>-77.524673</Lon>
+    <HGT>70</HGT>
+  </Count>
+  <Count Data="425">
+    <UTC>2017-01-03,02:07:28</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541317</Lat>
+    <Lon>-77.524605</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="426">
+    <UTC>2017-01-03,02:07:43</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541061</Lat>
+    <Lon>-77.524269</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="427">
+    <UTC>2017-01-03,02:07:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540825</Lat>
+    <Lon>-77.523872</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="428">
+    <UTC>2017-01-03,02:08:22</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540569</Lat>
+    <Lon>-77.523415</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="429">
+    <UTC>2017-01-03,02:10:08</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540936</Lat>
+    <Lon>-77.524529</Lon>
+    <HGT>62</HGT>
+  </Count>
+  <Count Data="430">
+    <UTC>2017-01-03,02:10:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541084</Lat>
+    <Lon>-77.524704</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="431">
+    <UTC>2017-01-03,02:10:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541142</Lat>
+    <Lon>-77.524857</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="432">
+    <UTC>2017-01-03,02:10:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541111</Lat>
+    <Lon>-77.524765</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="433">
+    <UTC>2017-01-03,02:11:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541233</Lat>
+    <Lon>-77.524803</Lon>
+    <HGT>75</HGT>
+  </Count>
+  <Count Data="434">
+    <UTC>2017-01-03,02:11:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541294</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="435">
+    <UTC>2017-01-03,02:11:41</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541222</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="436">
+    <UTC>2017-01-03,02:11:56</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541218</Lat>
+    <Lon>-77.524727</Lon>
+    <HGT>75</HGT>
+  </Count>
+  <Count Data="437">
+    <UTC>2017-01-03,02:12:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541252</Lat>
+    <Lon>-77.52462</Lon>
+    <HGT>75</HGT>
+  </Count>
+  <Count Data="438">
+    <UTC>2017-01-03,02:12:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541161</Lat>
+    <Lon>-77.524414</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="439">
+    <UTC>2017-01-03,02:12:58</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541168</Lat>
+    <Lon>-77.524498</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="440">
+    <UTC>2017-01-03,02:13:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541397</Lat>
+    <Lon>-77.52478</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="441">
+    <UTC>2017-01-03,02:14:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541321</Lat>
+    <Lon>-77.524666</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="442">
+    <UTC>2017-01-03,02:14:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541252</Lat>
+    <Lon>-77.524681</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="443">
+    <UTC>2017-01-03,02:14:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541245</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="444">
+    <UTC>2017-01-03,02:14:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541199</Lat>
+    <Lon>-77.524796</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="445">
+    <UTC>2017-01-03,02:15:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541229</Lat>
+    <Lon>-77.524734</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="446">
+    <UTC>2017-01-03,02:15:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541206</Lat>
+    <Lon>-77.524712</Lon>
+    <HGT>76</HGT>
+  </Count>
+  <Count Data="447">
+    <UTC>2017-01-03,02:15:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541233</Lat>
+    <Lon>-77.524773</Lon>
+    <HGT>75</HGT>
+  </Count>
+  <Count Data="448">
+    <UTC>2017-01-03,02:15:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541283</Lat>
+    <Lon>-77.524818</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="449">
+    <UTC>2017-01-03,02:16:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.524742</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="450">
+    <UTC>2017-01-03,02:16:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541164</Lat>
+    <Lon>-77.524635</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="451">
+    <UTC>2017-01-03,02:16:32</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540905</Lat>
+    <Lon>-77.524567</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="452">
+    <UTC>2017-01-03,02:16:47</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540752</Lat>
+    <Lon>-77.524689</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="453">
+    <UTC>2017-01-03,02:17:02</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540928</Lat>
+    <Lon>-77.525246</Lon>
+    <HGT>71</HGT>
+  </Count>
+  <Count Data="454">
+    <UTC>2017-01-03,02:17:17</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541439</Lat>
+    <Lon>-77.525948</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="455">
+    <UTC>2017-01-03,02:20:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541336</Lat>
+    <Lon>-77.524536</Lon>
+    <HGT>-12</HGT>
+  </Count>
+  <Count Data="456">
+    <UTC>2017-01-03,02:29:40</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541348</Lat>
+    <Lon>-77.524834</Lon>
+    <HGT>68</HGT>
+  </Count>
+  <Count Data="457">
+    <UTC>2017-01-03,02:31:11</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541588</Lat>
+    <Lon>-77.524925</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="458">
+    <UTC>2017-01-03,02:31:26</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541649</Lat>
+    <Lon>-77.524948</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="459">
+    <UTC>2017-01-03,02:31:42</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541672</Lat>
+    <Lon>-77.525131</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="460">
+    <UTC>2017-01-03,02:32:07</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.542061</Lat>
+    <Lon>-77.525917</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="461">
+    <UTC>2017-01-03,02:32:22</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541889</Lat>
+    <Lon>-77.525826</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="462">
+    <UTC>2017-01-03,02:32:37</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541916</Lat>
+    <Lon>-77.525856</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="463">
+    <UTC>2017-01-03,02:32:52</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.542267</Lat>
+    <Lon>-77.52626</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="464">
+    <UTC>2017-01-03,02:35:09</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541214</Lat>
+    <Lon>-77.524651</Lon>
+    <HGT>72</HGT>
+  </Count>
+  <Count Data="465">
+    <UTC>2017-01-03,02:35:24</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540844</Lat>
+    <Lon>-77.524292</Lon>
+    <HGT>74</HGT>
+  </Count>
+  <Count Data="466">
+    <UTC>2017-01-03,02:35:39</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.540974</Lat>
+    <Lon>-77.524345</Lon>
+    <HGT>77</HGT>
+  </Count>
+  <Count Data="467">
+    <UTC>2017-01-03,02:35:54</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.54126</Lat>
+    <Lon>-77.524498</Lon>
+    <HGT>78</HGT>
+  </Count>
+  <Count Data="468">
+    <UTC>2017-01-03,02:36:19</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541424</Lat>
+    <Lon>-77.524643</Lon>
+    <HGT>73</HGT>
+  </Count>
+  <Count Data="469">
+    <UTC>2017-01-03,02:36:42</UTC>
+    <FixType>3D-fix</FixType>
+    <Lat>37.541332</Lat>
+    <Lon>-77.524559</Lon>
+    <HGT>72</HGT>
+  </Count>
+</dataset2>
