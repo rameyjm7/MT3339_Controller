@@ -3,11 +3,52 @@
 #include "QStringList"
 #include "QFile"
 #include "QMessageBox"
-
+#include "QDebug"
 QFile * filewriter;
 
 nmea_parser::nmea_parser(QObject *parent)
 {
+
+}
+
+void nmea_parser::Show_Locus()
+{
+    qDebug() << "Serial Number     : " <<  locus.serial_no;
+    qDebug() << "Type              : " <<  locus.type;
+    qDebug() << "Mode              : " <<  locus.mode;
+    qDebug() << "Content           : " <<  locus.content;
+    qDebug() << "Logging Interval  : " <<  locus.interval;
+    qDebug() << "Distance          : " <<  locus.distance;
+    qDebug() << "Speed             : " <<  locus.speed;
+    qDebug() << "Logging Status    : " <<  locus.status;
+    qDebug() << "Number of Logs    : " <<  locus.number;
+    qDebug() << "Percent Used      : " <<  locus.percent;
+}
+
+void nmea_parser::Show_GPRMC()
+{
+    qDebug() << "Time       : " << time_formatted;
+    qDebug() << "Latitude   : " << dat.latitude;
+    qDebug() << "Longitude  : " << dat.longitude;
+    qDebug() << "Speed      : " << dat.ground_speed_knots;
+    qDebug() << "Date Raw   : " << dat.date_raw;
+
+}
+
+void nmea_parser::Show_Firmware()
+{
+    qDebug() << "Firmware : " << firmware_version;
+    qDebug() << "Model No : " << model_number;
+}
+
+void nmea_parser::printData()
+{
+    qDebug() << "Time UTC: " << dat.time_raw_utc;
+    qDebug() << "Latitude: " << dat.latitude;
+    qDebug() << "Longitude: " << dat.longitude;
+    qDebug() << "Altitude: " << dat.altitude;
+    qDebug() << "Num Satelites: " << dat.num_satelites;
+    qDebug() << "Health: " << dat.fix_quality;
 
 }
 
@@ -26,7 +67,36 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
     int count = csvdata.count();
     if(!strcmp("$GPGGA",toCharP(ident)))
     {
-        //        qDebug() << "GPGGA";
+
+    }
+    if(!strcmp("$GPGSA",toCharP(ident)))
+    {
+        if(!strcmp(toCharP(QString(csvdata.at(1))),"A"))
+        {
+            //            qDebug() << "Automatic mode";
+            dat.automatic=true;
+        }
+        else
+        {
+            dat.automatic=false;
+            //            qDebug() << "Manual mode";
+        }
+        dat.fix_quality = QString(csvdata.at(2)).toFloat();
+
+        if(csvdata.count()>15) dat.hdop = QString(csvdata.at(15)).toFloat();
+
+        if(csvdata.count()>17) dat.vdop = QString(QString(csvdata.at(17)).split("*").at(0)).toFloat();
+
+        if(csvdata.count()>16) dat.pdop = QString(csvdata.at(16)).toFloat();
+        if((((int) dat.time_seconds)%10 == 0))
+        {
+            qDebug() << "Fix :" <<  dat.fix_quality
+                     << "HDOP :" <<  dat.hdop
+                     << "VDOP :" <<  dat.vdop
+                     << "PDOP :" << dat.pdop;
+
+        }
+
     }
     if(!strcmp("$PMTKLOX,0,86*67",toCharP(temp)))
     {
@@ -51,29 +121,35 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
             locus.current_read = QString(csvdata.at(2)).toInt();
             if(locus.current_read % 5 == 0) // once every 5, print
                 qDebug() << "Current Read: " << csvdata.at(2);
+            float progress = 100*locus.current_read/locus.number_of_reads;
+            //            qDebug() << QString::number(progress);
+            emit updateProgressBar(progress);
 
         }
         else if(!strcmp(toCharP(QString(QString(csvdata.at(1)).split("*").at(0))),"2"))
         {
 
             QString filename=locus.filename;
-            filewriter = new QFile(filename);
+            filewriter = new QFile("data.log");
             flashData.append("$PMTK001,622,3*36");
+            QStringList list = QString(flashData).split("$");
             if ( filewriter->open(QIODevice::ReadWrite) )
             {
-                filewriter->write(flashData);
+                QTextStream stream( filewriter );
+
+                for(int i=0; i<list.count()-1; i++)
+                    stream << QString(list.at(i)).prepend("$") << endl;
             }
-            qDebug() << "# Locus dump finished.";
+            qDebug() << "#################### Locus dump finished.";
             filewriter->close();
-            qDebug() << "# File " << locus.filename << " wrote successfully.";
+            qDebug() << "#################### File " << locus.filename << " wrote successfully.";
             emit downloadFinished();
         }
 
         flashData.append(serial_data);
     }
-    else   if(!strcmp("$GPRMC",toCharP(ident)))
+    if(!strcmp("$GPRMC",toCharP(ident)))
     {
-        //        qDebug() << "GPRMC";
         //        1   220516     Time Stamp
         //        2   A          validity - A-ok, V-invalid
         //        3   5133.82    current Latitude
@@ -86,11 +162,11 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
         //        10  004.2      Variation
         //        11  W          East/West
         //        12  *70        checksum
-        dat.time_raw_utc = QString(csvdata.at(1)).toFloat();
-        dat.latitude = QString(csvdata.at(3)).toFloat();
-        dat.longitude =  QString(csvdata.at(5)).toFloat();
-        dat.ground_speed_knots =  QString(csvdata.at(7)).toFloat();
-        dat.date_raw =  QString(csvdata.at(9)).toFloat();
+        if(csvdata.count()>1) dat.time_raw_utc = QString(csvdata.at(1)).toFloat();
+        if(csvdata.count()>3) dat.latitude = QString(csvdata.at(3)).toFloat();
+        if(csvdata.count()>5) dat.longitude =  QString(csvdata.at(5)).toFloat();
+        if(csvdata.count()>8) dat.ground_speed_knots =  QString(csvdata.at(7)).toFloat();
+        if(csvdata.count()>9) dat.date_raw =  QString(csvdata.at(9)).toFloat();
 
 
         int hours, minutes, seconds;
@@ -120,6 +196,11 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
             hours = 12;
         }
 
+        dat.time_hours_utc = hours+5;
+        dat.time_hours_est = hours;
+        dat.time_minutes = minutes;
+        dat.time_seconds = seconds;
+
         QString thours = QString("%1").arg(hours, 2, 10, QChar('0'));
         QString tmins = QString("%1").arg(minutes, 2, 10, QChar('0'));
         QString tsecs = QString("%1").arg(seconds, 2, 10, QChar('0'));
@@ -127,8 +208,8 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
         QString time; time.append(thours)
                 .append(":").append(tmins)
                 .append(":").append(tsecs)
-                .append(" ").append(dat.time_amPM == 0 ? "PM" : "AM");
-        //        qDebug() << "Time : " <<  time;
+                .append(" ").append(dat.time_amPM == 0 ? "AM" : "PM");
+
         time_formatted = time;
 
 
@@ -154,8 +235,22 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
         QString date; date.append(tmonths)
                 .append("/").append(tdays)
                 .append("/").append(tyears);
-        //        qDebug() << "Date : " <<  date;
         date_formatted = date;
+
+
+        if((((int) dat.time_seconds)%5 == 0))
+        {
+
+            qDebug() << "Latitude : " << dat.latitude << "          " // << " " << dat.lat_NS ? "S" : "N";
+                     << "Longitude : " << dat.longitude; // << " "  << dat.long_WE ? "W" : "E";
+
+            qDebug() << "Time : " <<  time_formatted
+                     << "Date : " <<  date_formatted;
+
+        }
+
+        if((((int) dat.time_seconds)%200 == 0)) emit SIGNALqueryLocus();
+
     }
     // locus end dump 622, 3*36
     else   if( (!strcmp("$PMTK001",toCharP(ident))))
@@ -165,7 +260,6 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
     }
     else   if(!strcmp("$PMTKLOG",toCharP(ident))) // locus status
     {
-        qDebug() << "PMTKLOG";
         //$PMTKLOG, Serial#, Type, Mode, Content, Interval, Distance, Speed, Status, Number,
         //        Percent*CH
         locus.serial_no = QString(csvdata.at(1)).toInt();
@@ -179,6 +273,7 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
         locus.number = QString(csvdata.at(9)).toInt();
         if(csvdata.count() >=10)  locus.percent = QString(QString(csvdata.at(10)).split("*").at(0)).toInt();
         else qDebug() << "# Count is " << csvdata.count();
+        Show_Locus();
     }
     else   if(!strcmp("$PMTK705",toCharP(ident))) // firmware version
     {
@@ -187,6 +282,9 @@ nmea_parser::GPSData nmea_parser::parseData(QByteArray serial_data)
         model_number = QString(QString(serial_data).split("_").at(2)).toInt();
 
     }
+
+
+
 
 
 }

@@ -4,6 +4,7 @@
 #include <QObject>
 #include "QDebug"
 #include "QString"
+#include "QFile"
 class nmea_parser : public
         QObject
 {
@@ -34,12 +35,11 @@ public:
         float time_zone_correction = -5;
         float time_raw_utc;
         float time_hours_utc;
-        float time_amPM; // 0 is am 1 is PM
-        float time_minutes_utc;
-        float time_seconds_utc;
         float time_hours_est;
-        float time_minutes_est;
-        float time_seconds_est;
+        float time_amPM; // 0 is am 1 is PM
+        float time_minutes;
+        float time_seconds;
+
         float time_zone;
         float date_raw;
         float date_day;
@@ -47,13 +47,13 @@ public:
         float date_year;
 
 
-
-        int num_satelites;
-        float ground_speed_knots;
-        int fix_quality;
-        float hdop; // horizontal dilution of precision, relative accuracty of horizontal position
-        float height_from_wgs84;
-        float checksum;
+        bool automatic=false;           //  1
+        int num_satelites=0;
+        float ground_speed_knots=0;
+        int fix_quality=0;
+        float hdop=0,pdop=0,vdop=0; // horizontal dilution of precision, relative accuracty of horizontal position
+        float height_from_wgs84=0;
+        float checksum=0;
     };
     GPSData dat;
 
@@ -76,50 +76,28 @@ public:
         QString filename = "data.txt"; // for saving flash data
     };
     LOCUSStatus locus;
-    void Show_Locus()
-    {
-        qDebug() << "Serial Number     : " <<  locus.serial_no;
-        qDebug() << "Type              : " <<  locus.type;
-        qDebug() << "Mode              : " <<  locus.mode;
-        qDebug() << "Content           : " <<  locus.content;
-        qDebug() << "Logging Interval  : " <<  locus.interval;
-        qDebug() << "Distance          : " <<  locus.distance;
-        qDebug() << "Speed             : " <<  locus.speed;
-        qDebug() << "Logging Status    : " <<  locus.status;
-        qDebug() << "Number of Logs    : " <<  locus.number;
-        qDebug() << "Percent Used      : " <<  locus.percent;
-    }
-    void Show_GPRMC()
-    {
-        qDebug() << "Time       : " << time_formatted;
-        qDebug() << "Latitude   : " << dat.latitude;
-        qDebug() << "Longitude  : " << dat.longitude;
-        qDebug() << "Speed      : " << dat.ground_speed_knots;
-        qDebug() << "Date Raw   : " << dat.date_raw;
-
-    }
-    void Show_Firmware()
-    {
-        qDebug() << "Firmware : " << firmware_version;
-        qDebug() << "Model No : " << model_number;
-    }
+    void Show_Locus();
+    void Show_GPRMC();
+    void Show_Firmware();
 
 
     typedef GPSData GPGGA_Data;
     typedef GPSData GPRMC_Data;
-    void printData()
-    {
-        qDebug() << "Time UTC: " << dat.time_raw_utc;
-        qDebug() << "Latitude: " << dat.latitude;
-        qDebug() << "Longitude: " << dat.longitude;
-        qDebug() << "Altitude: " << dat.altitude;
-        qDebug() << "Num Satelites: " << dat.num_satelites;
-        qDebug() << "Health: " << dat.fix_quality;
-
-    }
+    void printData();
     GPSData parseData(QByteArray serial_data);
+
+
+
+
 signals:
     void downloadFinished();
+    void pipeParsedData(QString data);
+    void SIGNALqueryLocus();
+    void updateProgressBar(float progress);
+    void appendRed(QString msg);
+    void appendBlue(QString msg);
+    void appendGreen(QString msg);
+    void appendWhite(QString msg);
 };
 
 

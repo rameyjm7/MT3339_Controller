@@ -51,17 +51,18 @@
 
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "nmea_parser.h"
 #include <QtCore/QtGlobal>
-
 #include <QMainWindow>
-
 #include <QtSerialPort/QSerialPort>
-
+#include "QDebug"
 QT_BEGIN_NAMESPACE
 
 class QLabel;
 
+#include "QTextStream"
+
+#include "QPlainTextEdit"
 namespace Ui {
 class MainWindow;
 }
@@ -76,173 +77,134 @@ class MainWindow : public QMainWindow
     Q_OBJECT
     
 public:
+    QString settingsfile_name = "settings.csv";
+    QString datafile_name = "data.bin";
+    int baudrate = 9600;
+    QString portname = "/dev/ttyUSB0";
     bool update_locus=false;
     bool downloading = false;
-    QString filename = "RawData.txt";
     explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
-    QString locus_start = "$PMTK185,0*22";
-    QString locus_stop = "$PMTK185,1*23";
-    QString locus_querystatus = "$PMTK183*38";
-    QString locus_downloaddata = "$PMTK622,1*29";
-    QString locus_flasherase = "$PMTK184,1*22";
-    QString locus_alwayslocateON = "$PMTK255,8*23";
-    QString locus_alwayslocateOFF = "$PMTK255,0*2B";
-    QString locus_powersaveset = "$PMTK161,0*28";
-    QString locus_easyON = "$PMTK869,1,1*35";
-    QString locus_easyOFF = "$PMTK869,1,1*34";
-    QString locus_easyQUERY = "$PMTK869,0*29";
-    QString coldstart = "$PMTK102*31";
-    QString warmstart = "$PMTK103*30";
-    QString hotstart = "$PMTK101*32";
-    QString factoryrestart = "$PMTK102*31";
+    ~MainWindow(){};
     bool parse_data = false;
+    QPlainTextEdit * parsed_log;
     // different commands to set the update rate from once a second (1 Hz) to 10 times a second (10Hz)
     // Note that these only control the rate at which the position is echoed, to actually speed up the
     // position fix you must also send one of the position fix rate commands below too.
-#define PMTK_SET_NMEA_UPDATE_100_MILLIHERTZ  "$PMTK220,10000*2F" // Once every 10 seconds, 100 millihertz.
-#define PMTK_SET_NMEA_UPDATE_200_MILLIHERTZ  "$PMTK220,5000*1B"  // Once every 5 seconds, 200 millihertz.
-#define PMTK_SET_NMEA_UPDATE_1HZ  "$PMTK220,1000*1F"
-#define PMTK_SET_NMEA_UPDATE_5HZ  "$PMTK220,200*2C"
-
-#define PMTK_SET_NMEA_UPDATE_10HZ "$PMTK220,100*2F"
-    // Position fix update rate commands.
-#define PMTK_API_SET_FIX_CTL_100_MILLIHERTZ  "$PMTK300,10000,0,0,0,0*2C" // Once every 10 seconds, 100 millihertz.
-#define PMTK_API_SET_FIX_CTL_200_MILLIHERTZ  "$PMTK300,5000,0,0,0,0*18"  // Once every 5 seconds, 200 millihertz.
-#define PMTK_API_SET_FIX_CTL_1HZ  "$PMTK300,1000,0,0,0,0*1C"
-#define PMTK_API_SET_FIX_CTL_5HZ  "$PMTK300,200,0,0,0,0*2F"
-    // Can't fix position faster than 5 times a second!
-
-#define PMTK_SET_BAUD_57600 "$PMTK251,57600*2C"
-#define PMTK_SET_BAUD_9600 "$PMTK251,9600*17"
-#define PMTK_SET_BAUD_115200 "$PMTK251,115200*1F"
-#define PMTK_SET_BAUD_38400 "$PMTK251,38400*27"
-
-
-
-
-    // turn on only the second sentence (GPRMC)
-#define PMTK_SET_NMEA_OUTPUT_RMCONLY "$PMTK314,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*29"
-    // turn on GPRMC and GGA
-#define PMTK_SET_NMEA_OUTPUT_RMCGGA "$PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*28"
-    // turn on ALL THE DATA
-#define PMTK_SET_NMEA_OUTPUT_ALLDATA "$PMTK314,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0*28"
-    // turn off output
-#define PMTK_SET_NMEA_OUTPUT_OFF "$PMTK314,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*28"
-
-    // to generate your own sentences, check out the MTK command datasheet and use a checksum calculator
-    // such as the awesome http://www.hhhh.org/wiml/proj/nmeaxor.html
-
-#define PMTK_LOCUS_STARTLOG  "$PMTK185,0*22"
-#define PMTK_LOCUS_STOPLOG "$PMTK185,1*23"
-#define PMTK_LOCUS_STARTSTOPACK "$PMTK001,185,3*3C"
-#define PMTK_LOCUS_QUERY_STATUS "$PMTK183*38"
-#define PMTK_LOCUS_ERASE_FLASH "$PMTK184,1*22"
-#define LOCUS_OVERLAP 0
-#define LOCUS_FULLSTOP 1
-
-#define PMTK_ENABLE_SBAS "$PMTK313,1*2E"
-#define PMTK_ENABLE_WAAS "$PMTK301,2*2E"
-
-    // standby command & boot successful message
-#define PMTK_STANDBY "$PMTK161,0*28"
-#define PMTK_STANDBY_SUCCESS "$PMTK001,161,3*36"  // Not needed currently
-#define PMTK_AWAKE "$PMTK010,002*2D"
-
-    // ask for the release and version
-#define PMTK_Q_RELEASE "$PMTK605*31"
-
-    // request for updates on antenna status
-#define PGCMD_ANTENNA "$PGCMD,33,1*6C"
-#define PGCMD_NOANTENNA "$PGCMD,33,0*6D"
-
-    // how long to wait when we're looking for a response
-#define MAXWAITSENTENCE 5
+#include "pmtkcommands.h"
     
-    
-
+    QPlainTextEdit * edit;
+    bool locus_repeat_query = true;
     float getDownloadProgress();
-public slots:
-    void LOCUSeraseFlash();
-    void LOCUSqueryStatus();
-    void updateSettings();
-    void handleData();
-    void queryFirmware();
-    void writeSerial(QByteArray a);
-    void writeSerialQuick(QString a);
-    void saveData();
-    //    void appendData();
+    int serial_update_rate = 5; // in ms
+    bool serial_reading = false;
+    int serial_readlines = 10;
+
+QByteArray dataBuff;
+    void pushSettings();
+    void pullSettings();
+
+
+
+    void appendColoredText(QPlainTextEdit * edit, QString text, QString color)
+    {
+        QString temp = "<font color=";
+        temp.append(color).append("> </font> ").append(text);
+        edit->appendHtml(temp);
+
+    }
+    void appendRed( QString text,  QPlainTextEdit * edit)     {        appendColoredText(edit,text,"red");   }
+    void appendGreen( QString text,  QPlainTextEdit * edit)   {        appendColoredText(edit,text,"green");   }
+    void appendBlue( QString text,  QPlainTextEdit * edit)    {        appendColoredText(edit,text,"blue");   }
+    void appendOrange( QString text,  QPlainTextEdit * edit)  {        appendColoredText(edit,text,"orange");   }
+    void appendBlack( QString text,  QPlainTextEdit * edit)   {        appendColoredText(edit,text,"black");   }
+    void appendGray( QString text,  QPlainTextEdit * edit)    {        appendColoredText(edit,text,"gray");   }
+    void appendPink( QString text,  QPlainTextEdit * edit)    {        appendColoredText(edit,text,"pink");   }
+    void appendWhite( QString text,  QPlainTextEdit * edit)   {        appendColoredText(edit,text,"white");   }
+    void appendYellow( QString text,  QPlainTextEdit * edit)  {        appendColoredText(edit,text,"yellow");   }
+
+
+
+    bool openHandle(int port, int baudrate);
+    void closeHandle();
+    void beginSerialRead();
+    void stopSerialRead();
     void updateTableValues();
+    void writeSerial(QString msg);
+//    void writeSerial(QByteArray ba);
+public slots:
 
-    void downloadComplete();
-    void showStatusMessage(const QString &message);
+    void addName(QString name);
+    void addBaud(int val);
+
+    void recieveData();
+    void readSerial();
 private slots:
-    void openSerialPort();
-    void openSerialPorts(QString portname, int baud);
-    void closeSerialPort();
-    void writeData(const QByteArray &data);
-    void readData();
-    
-    void handleError(QSerialPort::SerialPortError error);
-    
-    void on_pushButton_3_clicked();
-    void on_pushButton_4_clicked();
-    
-    
-    void on_pushButton_clicked();
-    
-    void on_pushButton_2_clicked();
-    
-    void on_pushButton_6_clicked();
-    
-    void on_pushButton_5_clicked();
-    
-    void on_pushButton_12_clicked();
-    
-    void on_pushButton_15_clicked();
-    
-    void on_pushButton_16_clicked();
-    
-    void on_pushButton_14_clicked();
-    
-    void on_pushButton_13_clicked();
-    
     void on_pushButton_17_clicked();
-    
-    void on_pushButton_18_clicked();
-    
-    void on_pushButton_7_clicked();
-    
-    void on_pushButton_8_clicked();
 
-    void on_pushButton_11_clicked();
-
-
-
-    void on_pushButton_10_clicked();
-
-    void on_pushButton_19_clicked();
-
-    void on_pushButton_9_clicked();
-
-
-    void on_comboBox_2_currentIndexChanged(int index);
-
-    
-    void on_comboBox_3_currentIndexChanged(int index);
-
-    void on_pushButton_20_clicked();
+    void on_pushButton_2_clicked();
 
     void on_pushButton_close_clicked();
 
     void on_pushButton_clear_clicked();
-    
+
+    void on_pushButton_25_clicked();
+
+    void on_pushButton_27_clicked();
+
+    void on_pushButton_28_clicked();
+
+    void on_pushButton_24_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_12_clicked();
+
+
+    void on_pushButton_9_clicked();
+
+    void on_pushButton_20_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_spinBox_valueChanged(int arg1);
+
+    void on_spinBox_readlines_valueChanged(int arg1);
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_10_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_11_clicked();
+
+    void on_comboBox_setNMEA_Rate_currentIndexChanged(int index);
+
+    void on_pushButton_26_clicked();
+
+    void on_pushButton_29_clicked();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_19_clicked();
+
+    void on_pushButton_14_clicked();
+
+    void on_pushButton_15_clicked();
+
+    void on_comboBox_loggingrate_currentIndexChanged(int index);
+
+    void on_pushButton_18_clicked();
+
 private:
 
     
     Ui::MainWindow *ui;
     QLabel *status;
     Console *console;
+    nmea_parser * parser;
     SettingsDialog *settings;
     QSerialPort *serial;
 };

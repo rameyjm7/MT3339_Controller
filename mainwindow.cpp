@@ -1,7 +1,9 @@
+#include "QProcess"
+#include "QDebug"
+#include "QByteArray"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "console.h"
-#include "settingsdialog.h"
 #include "QTimer"
 #include <QMessageBox>
 #include <QLabel>
@@ -11,10 +13,14 @@
 #include "QDir"
 #include "nmea_parser.h"
 #include "unistd.h"
+#include "QSerialPortInfo"
+QProcess * proc_stty;
+#include "dialog.h"
 nmea_parser * parser;
 float ratio_percent = 85/6;
-
-
+#include "ft_serial1.h"
+ft_serial1* ft4232;
+#include "processwrapper.h"
 
 char* toCharP(QString in)
 {
@@ -31,122 +37,54 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 
     ui->setupUi(this);
-    console = new Console(ui->widget);
+    console = new Console(ui->edit_nmea);
     console->setEnabled(false);
-    console->setMinimumSize(850,300);
+    console->setMinimumSize(850,350);
+    console->setReadOnly(false);
 
-    serial = new QSerialPort(this);
-
-    settings = new SettingsDialog;
-    ui->actionConnect->setEnabled(true);
-    ui->actionDisconnect->setEnabled(false);
-    ui->actionQuit->setEnabled(true);
-    ui->actionConfigure->setEnabled(true);
-
-    status = new QLabel;
-    ui->statusBar->addWidget(status);
-    connect(serial, static_cast<void (QSerialPort::*)(QSerialPort::SerialPortError)>(&QSerialPort::error),
-            this, &MainWindow::handleError);
-    connect(serial, &QSerialPort::readyRead, this, &MainWindow::readData);
-    connect(console, &Console::getData, this, &MainWindow::writeData);
+    edit = ui->edit_parsed;
     parser = new nmea_parser();
-    connect(parser,SIGNAL(downloadFinished()),this,SLOT(downloadComplete()));
+    parsed_log = ui->edit_parsed;
+    connect(parser,SIGNAL(pipeParsedData(QString)),this,SLOT(appendParsedLog(QString)));
+    QTimer::singleShot(100,edit,SLOT(clear()));
+    parser = new nmea_parser();
 
-    filename = ui->lineEdit_filename->text();
+    pullSettings();
+
+    ft4232 = new ft_serial1();
+
+
 }
 //! [3]
 
-MainWindow::~MainWindow()
+
+void MainWindow::beginSerialRead()
 {
-    delete settings;
-    delete ui;
+    serial_reading = true;
+    readSerial();
 }
-
-//! [4]
-void MainWindow::openSerialPort()
+void MainWindow::stopSerialRead()
 {
-    SettingsDialog::Settings p = settings->settings();
-    serial->setPortName(p.name);
-    serial->setBaudRate(p.baudRate);
-    serial->setDataBits(p.dataBits);
-    serial->setParity(p.parity);
-    serial->setStopBits(p.stopBits);
-    serial->setFlowControl(p.flowControl);
-    serial->setReadBufferSize(1024*64);
+    serial_reading = false;
+}
+void MainWindow::readSerial()
+{
 
+#define size 256*10
+#define loop 25
 
-    if (serial->open(QIODevice::ReadWrite)) {
-        console->setEnabled(true);
-        console->setLocalEchoEnabled(p.localEchoEnabled);
-        ui->actionConnect->setEnabled(false);
-        ui->actionDisconnect->setEnabled(true);
-        ui->actionConfigure->setEnabled(false);
-        showStatusMessage(tr("Connected to %1 : %2, %3, %4, %5, %6")
-                          .arg(p.name).arg(p.stringBaudRate).arg(p.stringDataBits)
-                          .arg(p.stringParity).arg(p.stringStopBits).arg(p.stringFlowControl));
-    } else {
-        QMessageBox::critical(this, tr("Error"), serial->errorString());
-
-        showStatusMessage(tr("Open error"));
+    char str[size*loop];
+    for(int i =0; i<loop; i++)
+    {
+        ft4232->ReadLine(str,20,size);
+        if(strcmp(str,""))  console->putData(QByteArray(str).append("\n"));
+        parser->parseData(str);
     }
-
-
-}
-void MainWindow::openSerialPorts(QString portname, int baud )
-{
-    SettingsDialog::Settings p = settings->settings();
-    serial->setPortName(portname);
-    serial->setBaudRate(baud);
-    serial->setDataBits(p.dataBits);
-    serial->setParity(p.parity);
-    serial->setStopBits(p.stopBits);
-    serial->setFlowControl(p.flowControl);
-    serial->setReadBufferSize(1024);
-
-    if (serial->open(QIODevice::ReadWrite)) {
-        console->setEnabled(true);
-        console->setLocalEchoEnabled(p.localEchoEnabled);
-        ui->actionConnect->setEnabled(false);
-        ui->actionDisconnect->setEnabled(true);
-        ui->actionConfigure->setEnabled(false);
-        showStatusMessage(tr("Connected to %1 : %2")
-                          .arg(ui->comboBox_devicename->currentText()).arg(ui->comboBox_baudrate->currentText()));
-    } else {
-        QMessageBox::critical(this, tr("Error"), serial->errorString());
-
-        showStatusMessage(tr("Open error"));
-    }
-    usleep(1000*50);    writeSerialQuick(locus_querystatus);
-    usleep(1000*50);    writeSerialQuick(PMTK_Q_RELEASE);
-    usleep(1000*50);    writeSerialQuick(PMTK_SET_NMEA_OUTPUT_RMCONLY);
+    ft4232->Flush();
+    if(!downloading) updateTableValues();
+    if(serial_reading) QTimer::singleShot(5,this,SLOT(readSerial()));
 }
 
-void MainWindow::closeSerialPort()
-{
-    if (serial->isOpen())
-        serial->close();
-    console->setEnabled(false);
-    showStatusMessage(tr("Disconnected"));
-}
-
-
-void MainWindow::writeData(const QByteArray &data)
-{
-    serial->write(data);
-
-}
-
-QByteArray dataBuff;
-bool firmware_read = false;
-void MainWindow::handleData()
-{
-
-    parser->parseData(dataBuff);
-    updateTableValues();
-    dataBuff.clear();
-
-
-}
 
 void MainWindow::updateTableValues()
 {
@@ -162,61 +100,221 @@ void MainWindow::updateTableValues()
     ui->label_percent->setText(QString::number(parser->locus.percent));
     ui->progressBar_used->setValue(parser->locus.percent);
     ui->label_logs->setText(QString::number(parser->locus.number));
-    ui->progressBar->setValue(getDownloadProgress());
+    ui->progressBar_download->setValue(100*parser->locus.current_read/parser->locus.number_of_reads);
     if(parser->locus.current_read==parser->locus.number_of_reads)
     {
-        //        QMessageBox msgBox;
-        //        msgBox.setText(QString("Download complete! \n File saved as ").append(parser->locus.filename) );
-        //        msgBox.exec();
-        //        parser->locus.current_read=0;
+        parser->locus.current_read = 0;
+        downloading = false;
     }
-    filename = ui->lineEdit_filename->text();
+    datafile_name = ui->lineEdit_filename->text();
+    QString fix;
+    if(parser->dat.fix_quality == 0 ) fix = "No Fix";
+    else if(parser->dat.fix_quality == 1 ) fix = "No Fix";
+    else if(parser->dat.fix_quality == 2 ) fix = "2D Fix";
+    else if(parser->dat.fix_quality == 3 ) fix = "3D Fix";
+    ui->label_fix->setText(fix);
+    ui->label_hdop->setText(QString::number(parser->dat.hdop));
+    ui->label_vdop->setText(QString::number(parser->dat.vdop));
+    ui->label_pdop->setText(QString::number(parser->dat.pdop));
 }
 
-void MainWindow::readData()
+void MainWindow::pushSettings()
 {
-    dataBuff.append(serial->readLine());
-    console->putData(dataBuff );
-    if(downloading)
+    // open file, write settings to file
+    QFile file( settingsfile_name );
+    if ( file.open(QIODevice::ReadWrite) )
     {
-        QString filename="Data.txt";
-        QFile file( filename );
-        if ( file.open(QIODevice::Append) )
-        {
-            QTextStream stream( &file );
-            stream << dataBuff << endl;
-        }
-        file.close();
+        QTextStream stream( &file );
+        stream <<  QString("valid_baudrates,4800,9600,19200,38400,57600,115200").append("#");; // desc, number of entries, entries
+        stream <<  QString("portname,").append(portname).append("#");
+        stream <<  QString("baudrate,").append(QString::number(baudrate)).append("#");
     }
-    QTimer::singleShot(50,this,SLOT(handleData()));
+    file.close();
+    qDebug() << "Wrote portname " << portname << " and baudrate " << QString::number(baudrate)
+             << "to " << settingsfile_name;
 }
-//! [7]
-void MainWindow::updateSettings()
+
+void MainWindow::pullSettings()
+{
+    //
+    QFile inputFile(settingsfile_name);
+    if (inputFile.open(QIODevice::ReadOnly))
+    {
+        QTextStream in(&inputFile);
+        QByteArray ba;
+        while (!in.atEnd())
+        {
+            QString line = in.readLine();
+            ba.append(line);
+        }
+        inputFile.close();
+
+
+        QString data = ba.data();
+        QStringList lines = data.split("#");
+        //            qDebug() << "Number of settings : " << lines.count();
+        qDebug() << QString(QString(lines.at(0)).split(",").at(0))
+                 << "," << QString::number(QString(QString(lines.at(1)).split(",").at(1)).toInt());
+
+        //        QStringList baudlist = QString(lines.at(0)).split(",");
+        //        baudlist.pop_front(); // remove setting name
+        //        ui->comboBox_baudrate->addItems(baudlist);
+
+
+
+
+
+
+
+        qDebug() << QString(QString(lines.at(1)).split(",").at(0))
+                 << "," << QString(QString(lines.at(0)).split(",").at(1));
+        portname =  QString(QString(lines.at(1)).split(",").at(1));
+
+
+        qDebug() << QString(QString(lines.at(2)).split(",").at(0))
+                 << "," << QString::number(QString(QString(lines.at(1)).split(",").at(1)).toInt());
+        baudrate = QString(QString(lines.at(2)).split(",").at(1)).toInt();
+
+
+        int index=0;
+        if(!strcmp(toCharP(QString::number(baudrate)),"4800")) index = 0;
+        else if(!strcmp(toCharP(QString::number(baudrate)),"9600")) index = 1;
+        else if(!strcmp(toCharP(QString::number(baudrate)),"19200")) index = 2;
+        else if(!strcmp(toCharP(QString::number(baudrate)),"38400")) index = 3;
+        else if(!strcmp(toCharP(QString::number(baudrate)),"57600")) index = 4;
+        else if(!strcmp(toCharP(QString::number(baudrate)),"115200")) index = 5;
+        ui->comboBox_baudrate->setCurrentIndex(index);
+    }
+}
+
+void MainWindow::addName(QString name)
+{
+    ui->comboBox_interface->addItem(name);
+}
+
+void MainWindow::addBaud(int val)
+{
+    ui->comboBox_baudrate->addItem(QString::number(val));
+}
+
+void MainWindow::on_pushButton_17_clicked()
+{
+    //    Dialog * d = new Dialog();
+    //    d->exec();
+    //    connect(d,SIGNAL(addDevice(QString)),this,SLOT(addName(QString)));
+    //    connect(d,SIGNAL(addBaud(int)),this,SLOT(addBaud(int)));
+    Dialog *d = new Dialog(0);
+    d->show();
+    connect(d,SIGNAL(addDevice(QString)),this,SLOT(addName(QString)));
+    connect(d,SIGNAL(addBaud(int)),this,SLOT(addBaud(int)));
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    if(!strcmp(toCharP(ui->comboBox_interface->currentText()),"Interface A"))   ft4232->Setup(0,0,0x6010);
+    else if(!strcmp(toCharP(ui->comboBox_interface->currentText()),"Interface B"))   ft4232->Setup(0,1,0x6010);
+
+
+    ft4232->SetBaudRate(ui->comboBox_baudrate->currentText().toInt());
+    if (!ft4232->IsPresent())
+        qDebug ("# Unable to initialize serial port ");
+    beginSerialRead();
+
+    writeSerial(PMTK_SET_NMEA_OUTPUT_ALLDATA);
+    usleep(10000);
+    writeSerial(PMTK_LOCUS_QUERY_STATUS);
+    usleep(10000);
+    writeSerial(PMTK_Q_RELEASE);
+    usleep(10000);
+
+}
+
+bool MainWindow::openHandle(int port, int baudrate)
+{
+
+    if(ft4232->isOpen)
+    {
+        qDebug() << "Device is already open.";
+    }
+    else
+    {
+        ft4232->bDEBUGMODE=true;
+        ft4232->Setup(port,0x6010,baudrate);
+        pushSettings();
+        beginSerialRead();
+    }
+
+}
+
+
+void MainWindow::on_pushButton_close_clicked()
+{
+
+
+    ft4232->Close();
+}
+
+void MainWindow::on_pushButton_clear_clicked()
+{
+    ui->edit_parsed->clear();
+    edit->clear();
+}
+
+void MainWindow::on_pushButton_25_clicked()
 {
     writeSerial(PMTK_Q_RELEASE);
+}
+processWrapper * proc;
+void MainWindow::on_pushButton_27_clicked()
+{
+    writeSerial(warmstart);
+}
+void MainWindow::recieveData()
+{
 
-    writeSerial(PMTK_LOCUS_QUERY_STATUS);
 }
 
-
-void MainWindow::handleError(QSerialPort::SerialPortError error)
+void MainWindow::on_pushButton_28_clicked()
 {
-    if (error == QSerialPort::ResourceError) {
-        QMessageBox::critical(this, tr("Critical Error"), serial->errorString());
-        closeSerialPort();
+    writeSerial(factoryrestart);
+}
+
+void MainWindow::on_pushButton_24_clicked()
+{
+    if(!strcmp(toCharP(ui->comboBox_baudrate_change_2->currentText()),"4800"))
+    {
+        writeSerial(PMTK_SET_BAUD_4800);
+    }
+    if(!strcmp(toCharP(ui->comboBox_baudrate_change_2->currentText()),"9600"))
+    {
+        writeSerial(PMTK_SET_BAUD_9600);
+    }
+    if(!strcmp(toCharP(ui->comboBox_baudrate_change_2->currentText()),"14400"))
+    {
+        writeSerial(PMTK_SET_BAUD_14400);
+    }
+    if(!strcmp(toCharP(ui->comboBox_baudrate_change_2->currentText()),"19200"))
+    {
+        writeSerial(PMTK_SET_BAUD_19200);
+    }
+    if(!strcmp(toCharP(ui->comboBox_baudrate_change_2->currentText()),"38400"))
+    {
+        writeSerial(PMTK_SET_BAUD_38400);
+    }
+    if(!strcmp(toCharP(ui->comboBox_baudrate_change_2->currentText()),"57600"))
+    {
+        writeSerial(PMTK_SET_BAUD_57600);
+    }
+    if(!strcmp(toCharP(ui->comboBox_baudrate_change_2->currentText()),"115200"))
+    {
+        writeSerial(PMTK_SET_BAUD_115200);
     }
 }
-
-void MainWindow::showStatusMessage(const QString &message)
-{
-    status->setText(message);
-}
-
 
 void MainWindow::on_pushButton_4_clicked()
 {
-    serial->flush();
-    //    serial->
+    downloading = true;
+    QProcess::execute(QString("rm ").append(ui->lineEdit_filename->text()));
     writeSerial(PMTK_SET_NMEA_OUTPUT_OFF);
     usleep(100*1000); // 50ms
     QString filename = ui->lineEdit_filename->text();
@@ -224,175 +322,122 @@ void MainWindow::on_pushButton_4_clicked()
     QByteArray ba;
     ba.append(locus_downloaddata);
     writeSerial(ba);
-}
-
-
-
-void MainWindow::on_pushButton_2_clicked()
-{
-    openSerialPorts(ui->comboBox_devicename->currentText(),ui->comboBox_baudrate->currentText().toInt());
-}
-
-void MainWindow::on_pushButton_6_clicked()
-{
-    QByteArray ba;
-    ba.append(hotstart);
-    writeSerial(ba);
-}
-
-void MainWindow::on_pushButton_5_clicked()
-{
-
-    QByteArray ba;
-    ba.append(warmstart);
-    writeSerial(ba);
-}
-void MainWindow::on_pushButton_3_clicked()
-{
-    QString a;
-    QByteArray ba;
-    a.append("");
-    ba.append(a);
-    writeSerial(ba);
 
 }
 
 void MainWindow::on_pushButton_12_clicked()
 {
-
-    writeSerial(PMTK_SET_BAUD_115200);
-}
-
-void MainWindow::on_pushButton_15_clicked()
-{
-    QByteArray ba;
-    ba.append(locus_start);
-    writeSerial(ba);
-    LOCUSqueryStatus();
-}
-
-void MainWindow::on_pushButton_16_clicked()
-{
-    QByteArray ba;
-    ba.append(PMTK_LOCUS_STOPLOG);
-    writeSerial(ba);
-    LOCUSqueryStatus();
-}
-
-void MainWindow::on_pushButton_14_clicked()
-{
-    QByteArray ba;
-    ba.append(locus_querystatus.toLocal8Bit());
-    writeSerial(ba);
-}
-
-void MainWindow::on_pushButton_13_clicked()
-{
-
-    QStringList items;
-    items << tr("Erase") << tr("Cancel");
-
-    bool ok;
-    QString item = QInputDialog::getItem(this, tr("Are you sure?"),
-                                         tr("Option:"), items, 0, false, &ok);
-    if (ok && !item.isEmpty())
-    {
-        if(!strcmp(toCharP(item),"Erase"))
-        {
-
-            LOCUSeraseFlash();
-        }
-        else if(!strcmp(toCharP(item),"Cancel"))
-        {
-            qDebug() << "Cancelled";
-        }
-
-    }
-
-
-}
-void MainWindow::LOCUSeraseFlash()
-{
-    QByteArray ba;
-    ba.append(locus_flasherase);
-    writeSerial(ba);
-    LOCUSqueryStatus();
-}
-void MainWindow::LOCUSqueryStatus()
-{
-    QByteArray ba;
-    ba.append(locus_querystatus);
-    writeSerial(ba);
-    //    QTimer::singleShot(10*1000,this,SLOT(LOCUSqueryStatus()));
+    beginSerialRead();
 }
 
 
-
-void MainWindow::writeSerial(QByteArray a)
+void MainWindow::on_pushButton_9_clicked()
 {
-    a.append("\r\n");
-    serial->write(a);
-}
-void MainWindow::writeSerialQuick(QString a)
-{
-    QByteArray ba; ba.append(a);
-    ba.append("\r\n");
-    serial->write(ba);
+    ft4232->SetBaudRate(ui->comboBox_baudrate_change_2->currentText().toInt());
 }
 
-#include "download_dialog.h"
-download_dialog* downloader;
-void MainWindow::on_pushButton_17_clicked()
+void MainWindow::on_pushButton_20_clicked()
 {
-
-
+    ft4232->findDevices();
 }
 
-void MainWindow::on_pushButton_18_clicked()
+void MainWindow::on_pushButton_3_clicked()
 {
-
+    ft4232->readEEPROM();
 }
 
-void MainWindow::on_pushButton_7_clicked()
+void MainWindow::on_pushButton_5_clicked()
 {
+    stopSerialRead();
+}
 
+void MainWindow::on_spinBox_valueChanged(int arg1)
+{
+    serial_update_rate = arg1;
+}
+
+void MainWindow::on_spinBox_readlines_valueChanged(int arg1)
+{
+    serial_readlines = arg1;
 }
 
 void MainWindow::on_pushButton_8_clicked()
 {
+    //    ft4232->WriteLine(PMTK_SET_NMEA_OUTPUT_RMCONLY);
+    //    console->putData(PMTK_SET_NMEA_OUTPUT_RMCONLY);
     writeSerial(PMTK_SET_NMEA_OUTPUT_RMCONLY);
 }
+
+void MainWindow::on_pushButton_10_clicked()
+{
+    //    ft4232->WriteLine(PMTK_SET_NMEA_OUTPUT_ALLDATA);
+    //    console->putData(PMTK_SET_NMEA_OUTPUT_ALLDATA);
+    writeSerial(PMTK_SET_NMEA_OUTPUT_ALLDATA);
+}
+
 void MainWindow::on_pushButton_clicked()
 {
+    //    ft4232->WriteLine(PMTK_SET_NMEA_OUTPUT_OFF);
+    //    console->putData(PMTK_SET_NMEA_OUTPUT_OFF);
     writeSerial(PMTK_SET_NMEA_OUTPUT_OFF);
-
 }
 
 void MainWindow::on_pushButton_11_clicked()
 {
     writeSerial(PMTK_SET_NMEA_OUTPUT_RMCGGA);
+    //    ft4232->WriteLine(PMTK_SET_NMEA_OUTPUT_RMCGGA);
+    //    console->putData(PMTK_SET_NMEA_OUTPUT_RMCGGA);
 }
 
-
-
-void MainWindow::on_pushButton_10_clicked()
+void MainWindow::on_comboBox_setNMEA_Rate_currentIndexChanged(int index)
 {
-    writeSerial(PMTK_SET_NMEA_OUTPUT_ALLDATA);
+    if(index == 0 )  writeSerial(PMTK_SET_NMEA_UPDATE_100_MILLIHERTZ);
+    else if(index == 1 )  writeSerial(PMTK_SET_NMEA_UPDATE_200_MILLIHERTZ);
+    else if(index == 2 )  writeSerial(PMTK_SET_NMEA_UPDATE_1HZ);
+    else if(index == 3 )  writeSerial(PMTK_SET_NMEA_UPDATE_10HZ);
+}
+void MainWindow::writeSerial(QString msg)
+{
+    ft4232->WriteLine(toCharP(msg));
+    console->putData(toCharP(msg));
+}
+//void MainWindow::writeSerial(QByteArray ba)
+//{
+//    ft4232->WriteLine(ba.data());
+//    console->putData(ba);
+//}
+
+void MainWindow::on_pushButton_26_clicked()
+{
+    writeSerial(coldstart);
+}
+
+void MainWindow::on_pushButton_29_clicked()
+{
+    writeSerial(hotstart);
+}
+
+void MainWindow::on_pushButton_16_clicked()
+{
+    writeSerial(locus_stop);
 }
 
 void MainWindow::on_pushButton_19_clicked()
 {
-    writeSerial(PMTK_SET_BAUD_9600);
-
+    writeSerial(locus_start);
 }
 
-void MainWindow::on_pushButton_9_clicked()
+void MainWindow::on_pushButton_14_clicked()
 {
-    writeSerial(PMTK_SET_BAUD_57600);
+    writeSerial(locus_querystatus);
 }
 
+void MainWindow::on_pushButton_15_clicked()
+{
+    writeSerial(locus_flasherase);
+}
 
-void MainWindow::on_comboBox_2_currentIndexChanged(int index)
+void MainWindow::on_comboBox_loggingrate_currentIndexChanged(int index)
 {
     if(index == 0 )  writeSerial(PMTK_API_SET_FIX_CTL_100_MILLIHERTZ);
     else if(index == 1 )  writeSerial(PMTK_API_SET_FIX_CTL_200_MILLIHERTZ);
@@ -400,44 +445,9 @@ void MainWindow::on_comboBox_2_currentIndexChanged(int index)
     else if(index == 3 )  writeSerial(PMTK_API_SET_FIX_CTL_5HZ);
 }
 
-void MainWindow::on_comboBox_3_currentIndexChanged(int index)
+void MainWindow::on_pushButton_18_clicked()
 {
-    if(index == 0 )  writeSerial(PMTK_SET_NMEA_UPDATE_100_MILLIHERTZ);
-    else if(index == 1 )  writeSerial(PMTK_SET_NMEA_UPDATE_200_MILLIHERTZ);
-    else if(index == 2 )  writeSerial(PMTK_SET_NMEA_UPDATE_1HZ);
-    else if(index == 3 )  writeSerial(PMTK_SET_NMEA_UPDATE_10HZ);
-}
-
-void MainWindow::on_pushButton_20_clicked()
-{
-    writeSerial(PMTK_Q_RELEASE);
-}
-void MainWindow::queryFirmware()
-{
-    writeSerial(PMTK_Q_RELEASE);
-}
-
-void MainWindow::saveData()
-{
-
-
-}
-
-void MainWindow::downloadComplete()
-{
-    writeSerial(PMTK_SET_NMEA_OUTPUT_RMCONLY);
-}
-
-void MainWindow::on_pushButton_close_clicked()
-{
-    closeSerialPort();
-}
-
-void MainWindow::on_pushButton_clear_clicked()
-{
-    console->clear();
-}
-float MainWindow::getDownloadProgress()
-{
-    return 100*((parser->locus.current_read)/(parser->locus.percent*ratio_percent));
+    proc = new processWrapper("sh parse_data.kml");
+    proc->startProcess();
+    qDebug() << "File parsed and output as output.kml."; // ;
 }
